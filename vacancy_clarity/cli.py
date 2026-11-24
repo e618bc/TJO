@@ -64,7 +64,7 @@ def print_report(report: dict, stream=None) -> None:
                 out.append(f"    {it['field_2']}: «{it['quote_2']}»")
             out.append(f"    Уточнить: {it['recommendation']}")
     m = report["meta"]
-    out.append(f"\nИтого: {m['vacancies_in_report']} вакансий, с замечаниями {m['with_issues']}, "
+    out.append(f"\nИтого: вакансий {m['vacancies_in_report']}, с замечаниями {m['with_issues']}, "
                f"замечаний {m['issues_total']}.")
     print("\n".join(out), file=stream)
 

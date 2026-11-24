@@ -1,0 +1,19 @@
+# ключи и локальные настройки
+.env
+config.ini
+
+# рабочие данные сервиса
+data/
+.cache/
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# материалы организаторов (не наши, большие)
+*.pdf
+*.docx
+kantcode.ru.html
