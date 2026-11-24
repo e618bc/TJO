@@ -1,0 +1,437 @@
+{
+  "author": "author_A",
+  "vacancies": [
+    {
+      "id": "BLIND-A-001",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "missing",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Зарплата не указана ни в полях (0/0), ни в тексте — соискатель не знает размер оплаты."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-002",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "schedule",
+          "note": "В поле schedule стоит «Гибкий график», но конкретные дни и часы (вт, чт 15:00–19:00, сб 10:00–13:00) даны в requirement.qualification, поэтому вопрос о днях и сменах не нужен."
+        },
+        {
+          "topic": "salary",
+          "note": "Числа «до 12 человек» и «7–14 лет» относятся к группам и возрасту детей, а не к оплате; зарплата 28000–32000 указана в полях."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-A-003",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "fields": [
+            "schedule",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Пятидневная рабочая неделя, 08:00–17:00",
+            "Работа посменно, сутки через трое, включая выходные и праздничные дни."
+          ],
+          "importance": "core",
+          "note": "Поле графика и текст требований описывают несовместимые режимы — пятидневку и сутки через трое."
+        },
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "fields": [
+            "employment",
+            "duty"
+          ],
+          "quotes": [
+            "Полная занятость",
+            "Трудовой договор заключается на отопительный сезон — с 1 октября по 30 апреля."
+          ],
+          "importance": "core",
+          "note": "Поле занятости не отражает, что работа сезонная/срочная, хотя текст ограничивает договор отопительным сезоном; допустимо и как ambiguity."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-004",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.qualification",
+            "requirements"
+          ],
+          "quotes": [
+            "Опыт работы не требуется, обучение на рабочем месте в течение первого месяца.",
+            "Опыт работы в МФЦ или органах социальной защиты не менее 1 года — обязательное условие."
+          ],
+          "importance": "core",
+          "note": "Два текстовых поля противоречат друг другу в том, нужен ли опыт работы (поле experience = 0 поддерживает первое)."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "location",
+          "note": "Упоминание головного офиса в г. Калининграде — справка о структуре учреждения; место работы однозначно: отдел в г. Зеленоградске, совпадает с адресом в поле."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-A-005",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "schedule",
+          "note": "В описании нет графика, но поле schedule содержит конкретное расписание (пн–пт 06:00–10:00) — отсутствие повтора в тексте не проблема."
+        },
+        {
+          "topic": "salary",
+          "note": "Зарплата в тексте не упомянута, но указана в полях (19500); невысокая сумма согласуется с частичной занятостью 4 часа в день."
+        },
+        {
+          "topic": "employment",
+          "note": "Тип занятости указан только в поле employment («Частичная занятость») и согласуется с графиком — замечание не требуется."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-A-006",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "fields": [
+            "job-name"
+          ],
+          "quotes": [
+            "Сотрудник отдела"
+          ],
+          "importance": "core",
+          "note": "Название не сообщает ни должность, ни отдел, ни направление работы."
+        },
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "fields": [
+            "duty"
+          ],
+          "quotes": [
+            "Участие в работе отдела, исполнение поручений начальника отдела, иные обязанности в соответствии с должностной инструкцией."
+          ],
+          "importance": "core",
+          "note": "Обязанности сформулированы общими словами без конкретных задач."
+        },
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "addresses.address[0].location",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Калининградская область",
+            "Место работы определяется при трудоустройстве: г. Багратионовск или г. Ладушкин."
+          ],
+          "importance": "core",
+          "note": "Адрес указан только как регион, а в тексте место работы не определено между двумя городами."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Высшее образование."
+          ],
+          "importance": "accept",
+          "note": "Не указано направление высшего образования; при неясной должности это допустимо отметить."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-007",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "fields": [
+            "salary_min",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "42000",
+            "Заработная плата — 36 000–38 000 руб. в месяц"
+          ],
+          "importance": "core",
+          "note": "Сумма в полях зарплаты (42000) не совпадает с суммой в тексте (36 000–38 000)."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-008",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "fields": [
+            "employment",
+            "schedule"
+          ],
+          "quotes": [
+            "Частичная занятость",
+            "Полный рабочий день, 5/2, 08:00–17:00"
+          ],
+          "importance": "core",
+          "note": "Поле занятости указывает частичную занятость, а поле графика — полный рабочий день."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirements"
+          ],
+          "quotes": [
+            "Знание необходимых программ и нормативных документов."
+          ],
+          "importance": "core",
+          "note": "Не названо, какие программы и нормативные документы нужно знать."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "salary",
+          "note": "«4 500 лицевых счетов» в duty — объём участка, а не сумма оплаты; зарплата 45000–52000 в полях не противоречит этому числу."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-A-009",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-010",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "fields": [
+            "duty",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "проведение вечерних мероприятий по субботам с 17:00 до 21:00",
+            "Выходные дни — суббота и воскресенье."
+          ],
+          "importance": "core",
+          "note": "Обязанности включают работу по субботам, а текст требований и поле schedule (пн–пт) называют субботу выходным; засчитывается и при указании поля schedule вместо qualification."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "requirements",
+          "note": "«Опыт организации массовых мероприятий приветствуется» при experience = 0 — не противоречие: опыт желателен, но не обязателен."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-A-011",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "missing",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "График работы не указан ни в поле, ни в тексте: неизвестны дни, часы и сменность."
+        },
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "addresses.address[0].location",
+            "duty"
+          ],
+          "quotes": [
+            "Гвардейский муниципальный округ",
+            "Уборка закреплённой территории"
+          ],
+          "importance": "core",
+          "note": "Указан только округ без населённого пункта и адреса, а «закреплённая территория» не определена."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-012",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "contradiction",
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes": [
+            "Учитель начальных классов",
+            "Преподавание английского языка в 5–11 классах"
+          ],
+          "importance": "core",
+          "note": "Название должности (начальные классы) не соответствует обязанностям и требованиям (английский язык в 5–11 классах)."
+        },
+        {
+          "topic": "duties",
+          "type": "contradiction",
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes": [
+            "Учитель начальных классов",
+            "Преподавание английского языка в 5–11 классах"
+          ],
+          "importance": "accept",
+          "note": "То же противоречие, засчитывается и под темой duties (не как отдельное дополнительное замечание)."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-013",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-014",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-015",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.experience",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "3",
+            "Опыт работы не обязателен — рассматриваем выпускников."
+          ],
+          "importance": "core",
+          "note": "Поле опыта требует 3 года, а текст говорит, что опыт не обязателен."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [
+            "Сменный график"
+          ],
+          "importance": "core",
+          "note": "Не указаны длительность смен, их чередование и время начала; уточнений нет ни в одном поле."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.qualification",
+            "requirement.education"
+          ],
+          "quotes": [
+            "Профильное образование.",
+            "Не указано"
+          ],
+          "importance": "accept",
+          "note": "Не ясно, какой уровень и профиль образования считается профильным."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-A-016",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "duties",
+          "type": "missing",
+          "fields": [
+            "duty"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Обязанности не описаны (значение «Не указано»): неизвестны маршрут, число рейсов, обязанности по осмотру и сопровождению."
+        },
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "fields": [
+            "addresses.address[0].location",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "г. Правдинск, ул. Кутузова, д. 6",
+            "Место работы — школа в пос. Железнодорожный, автобус стоит на территории школы."
+          ],
+          "importance": "core",
+          "note": "Адрес в поле и место работы в тексте указывают разные населённые пункты."
+        },
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "fields": [
+            "salary_min",
+            "salary_max",
+            "requirements"
+          ],
+          "quotes": [
+            "40000",
+            "Оплата почасовая, по фактически отработанным часам."
+          ],
+          "importance": "core",
+          "note": "Неясно, что означает «от 40000» при почасовой оплате: часовая ставка и порядок расчёта не указаны."
+        }
+      ],
+      "must_not_flag": []
+    }
+  ]
+}

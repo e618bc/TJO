@@ -1,0 +1,476 @@
+{
+  "author": "author_D",
+  "vacancies": [
+    {
+      "id": "BLIND-D-001",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "fields": [
+            "addresses.address.location",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "г. Калининград, ул. Комсомольская, д. 41",
+            "Рабочее место — производственный участок в г. Зеленоградске"
+          ],
+          "importance": "core",
+          "note": "В поле адреса указан Калининград, а в тексте рабочим местом назван участок в Зеленоградске, поэтому непонятно, куда соискатель будет ездить на работу."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [
+            "Сменный график"
+          ],
+          "importance": "core",
+          "note": "Не указаны продолжительность смены, время начала и чередование смен и выходных."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-002",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "employment",
+          "note": "Суточные смены 24/72 при «Полной занятости» — не противоречие: сменный режим не означает неполную занятость, а график расписан конкретно."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-003",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [
+            "56000",
+            "41000"
+          ],
+          "importance": "core",
+          "note": "Нижняя граница зарплаты больше верхней, поэтому соискатель не может понять реальную вилку оплаты."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "requirements"
+          ],
+          "quotes": [
+            "Привлечение к дежурствам — по графику предприятия."
+          ],
+          "importance": "accept",
+          "note": "Неясно, как часто и в какое время сверх пятидневки 08:00–17:00 назначаются дежурства; спорно, потому что основной график указан конкретно."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-004",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "duties",
+          "type": "missing",
+          "fields": [
+            "duty"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "В поле обязанностей только ссылка на внутренний документ, который соискатель не видит; самих обязанностей нет."
+        },
+        {
+          "topic": "employment",
+          "type": "ambiguity",
+          "fields": [
+            "employment"
+          ],
+          "quotes": [
+            "Временная"
+          ],
+          "importance": "core",
+          "note": "Не указан срок или повод временной работы (на какой период, до какой даты, замещение ли это)."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirements"
+          ],
+          "quotes": [
+            "знание ПК"
+          ],
+          "importance": "accept",
+          "note": "Не сказано, какие программы и системы нужно знать; спорно, так как для делопроизводителя это общепринятая формулировка."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-005",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-006",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "addresses.address.location"
+          ],
+          "quotes": [
+            "пос. Головкино, ул. Центральная, д. 3"
+          ],
+          "importance": "core",
+          "note": "Указаны три адреса в разных населённых пунктах, но нигде не сказано, где основное рабочее место, нужно ли ездить между клубами и кто оплачивает проезд."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [
+            "Пятидневная рабочая неделя с работой в выходные и праздничные дни согласно плану мероприятий"
+          ],
+          "importance": "core",
+          "note": "Нет часов работы, и непонятно, какие дни выходные, если работа в субботу и воскресенье тоже предусмотрена."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-007",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "schedule",
+          "note": "Слово «Гибкий график» здесь не размыто: в том же поле указаны дни, часы и недельная нагрузка, вопрос о днях и сменах не нужен."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-008",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "contradiction",
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes": [
+            "Медицинский регистратор",
+            "Выполнение внутримышечных и внутривенных инъекций по назначению врача"
+          ],
+          "importance": "core",
+          "note": "Название регистратора не соответствует обязанностям процедурной медсестры, поэтому неясно, на какую работу на самом деле нанимают."
+        },
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.qualification",
+            "duty"
+          ],
+          "quotes": [
+            "Медицинское образование не требуется",
+            "забор венозной крови на анализы"
+          ],
+          "importance": "accept",
+          "note": "Требования не сочетаются с медицинскими манипуляциями в обязанностях; допустимо, но корень тот же, что у замечания о названии, поэтому не обязательно."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-009",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "fields": [
+            "requirement.qualification",
+            "requirements"
+          ],
+          "quotes": [
+            "Заработная плата — 32 000 руб.",
+            "Зарплата от 45 000 руб."
+          ],
+          "importance": "core",
+          "note": "В двух текстовых полях указаны разные суммы оплаты, и непонятно, какая из них верна."
+        },
+        {
+          "topic": "salary",
+          "type": "missing",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [],
+          "importance": "accept",
+          "note": "Структурированные поля оплаты пусты (0); допустимо, но не обязательно, так как суммы есть в тексте — главная проблема в их расхождении."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-010",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "title",
+          "note": "«Главный специалист» — штатная должность муниципальной службы, а отдел назван, поэтому название не размытое, в отличие от просто «Специалист»."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-011",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "fields": [
+            "employment",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Полная занятость",
+            "Работа на 0,5 ставки."
+          ],
+          "importance": "core",
+          "note": "Поле указывает на полную занятость, а в тексте говорится о половине ставки, поэтому непонятны объём работы и смысл указанной зарплаты."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [
+            "Пятидневная рабочая неделя"
+          ],
+          "importance": "accept",
+          "note": "Нет часов работы, что особенно важно при половине ставки; допустимо, но не обязательно, потому что дни недели указаны."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-012",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "missing",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Оплата не указана ни в полях, ни в тексте."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "location",
+          "note": "Посёлки в обязанностях — места визитов к получателям услуг при базовом адресе центра в Славске; это не противоречие адресу, разъезды и компенсация проезда описаны."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-013",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-014",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "fields": [
+            "job-name",
+            "schedule"
+          ],
+          "quotes": [
+            "график 2/2",
+            "Понедельник–пятница, 08:00–15:42"
+          ],
+          "importance": "core",
+          "note": "В названии вакансии указан график 2/2, а в поле графика — пятидневка, поэтому непонятно, как распределены рабочие дни."
+        },
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.education",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Высшее",
+            "Среднее медицинское образование"
+          ],
+          "importance": "core",
+          "note": "Поле уровня образования требует высшее, а текст — среднее медицинское, и соискатель со средним образованием не поймёт, подходит ли он."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-015",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "fields": [
+            "schedule",
+            "schedule"
+          ],
+          "quotes": [
+            "08:00–17:00, обед 30 минут",
+            "продолжительность рабочей недели 36 часов"
+          ],
+          "importance": "core",
+          "note": "Пять дней по 8,5 часа дают 42,5 часа, а не заявленные 36, поэтому неясно, сколько на самом деле длится рабочий день."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "salary",
+          "note": "Оклад 19 800 руб. ниже нижней границы вилки, но это не противоречие: текст прямо говорит, что зарплата 44 000–51 000 руб. складывается из оклада и стимулирующих выплат, и совпадает с полями."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-016",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "duties",
+          "note": "«Иные поручения руководителя» стоят в конце подробного конкретного списка и ограничены обслуживанием заявителей; это типовая оговорка, а не размытые обязанности."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-D-017",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.qualification",
+            "requirements"
+          ],
+          "quotes": [
+            "опыт работы в бюджетном учреждении не менее 3 лет",
+            "Рассматриваем студентов последних курсов без опыта работы."
+          ],
+          "importance": "core",
+          "note": "Одно текстовое поле требует высшее образование и три года опыта, другое приглашает студентов без опыта, поэтому неясно, кого на самом деле рассматривают."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-018",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "fields": [
+            "job-name"
+          ],
+          "quotes": [
+            "Воспитатель / помощник воспитателя"
+          ],
+          "importance": "core",
+          "note": "В одной вакансии названы две разные должности, и неясно, на какую идёт набор и чьи обязанности перечислены."
+        },
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [
+            "30000",
+            "52000"
+          ],
+          "importance": "accept",
+          "note": "Широкая вилка, вероятно, объединяет оклады двух должностей; уточнение допустимо, но не обязательно, так как диапазон формально указан."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Педагогическое образование (дошкольное)"
+          ],
+          "importance": "accept",
+          "note": "Неясно, требуется ли педагогическое образование от помощника воспитателя; производно от неоднозначного названия."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-019",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "fields": [
+            "employment",
+            "schedule"
+          ],
+          "quotes": [
+            "Частичная занятость",
+            "Полный рабочий день, 5/2, 09:00–18:00"
+          ],
+          "importance": "core",
+          "note": "Поле занятости говорит о частичной, а поле графика — о полном рабочем дне пять дней в неделю; замечание под темой schedule по сути то же самое."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-D-020",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    }
+  ]
+}

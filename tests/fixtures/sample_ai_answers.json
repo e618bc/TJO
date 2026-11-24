@@ -1,0 +1,77 @@
+{
+ "DEMO-39-001": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "spo",
+  "exp_text": "notreq"
+ },
+ "DEMO-39-002": {
+  "duties": "boss",
+  "title_kind": "prof",
+  "title_match": "vague",
+  "edu_text": "none",
+  "pay_named": "no",
+  "days_named": "no",
+  "hours_named": "no",
+  "volume_text": "part"
+ },
+ "DEMO-39-003": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "exp_text": "y3plus"
+ },
+ "DEMO-39-004": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "none",
+  "format": "conflict"
+ },
+ "DEMO-39-005": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "spo"
+ },
+ "DEMO-39-006": {
+  "duties": "general",
+  "title_kind": "generic",
+  "title_match": "vague",
+  "edu_text": "none",
+  "exp_text": "wish",
+  "days_named": "no",
+  "hours_named": "no",
+  "place_named": "no",
+  "ref_1": "all"
+ },
+ "DEMO-39-007": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same"
+ },
+ "DEMO-39-008": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "none",
+  "days_named": "yes",
+  "hours_named": "yes",
+  "sch_consistency": "conflict"
+ },
+ "DEMO-39-009": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "train"
+ },
+ "DEMO-39-010": {
+  "duties": "concrete",
+  "title_kind": "prof",
+  "title_match": "same",
+  "edu_text": "none",
+  "exp_text": "req_nodur",
+  "ref_1": "place"
+ }
+}

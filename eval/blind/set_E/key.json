@@ -1,0 +1,479 @@
+{
+  "author": "author_E",
+  "vacancies": [
+    {
+      "id": "BLIND-E-001",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "fields": [
+            "salary_max",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "40000",
+            "Заработная плата — от 48 000 рублей"
+          ],
+          "importance": "core",
+          "note": "Верхняя граница вилки в структурированных полях (35 000–40 000) ниже суммы «от 48 000», названной в описании, поэтому непонятно, сколько будут платить."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "location",
+          "note": "Выезды на отбор проб — часть обязанностей, при этом указан полный адрес базового рабочего места и способ передвижения (служебный транспорт); это не неясность места работы."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-002",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-003",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.education",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Среднее профессиональное",
+            "Высшее медицинское образование по специальности «Лечебное дело»"
+          ],
+          "importance": "core",
+          "note": "Уровень образования в структурированном поле не совпадает с требованием высшего медицинского образования в описании."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-004",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "fields": [
+            "duty"
+          ],
+          "quotes": [
+            "Выполнение обязанностей согласно должностной инструкции."
+          ],
+          "importance": "core",
+          "note": "Ссылка на должностную инструкцию, которой у соискателя нет, не сообщает, какую работу предстоит выполнять."
+        },
+        {
+          "topic": "salary",
+          "type": "missing",
+          "fields": [
+            "salary_min",
+            "salary_max"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Размер оплаты нигде не указан: поля равны 0, а в описании оплата отложена до собеседования."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-005",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-006",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "fields": [
+            "addresses.address.location",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "г. Советск, ул. Каштановая, д. 8",
+            "Рабочее место — центральная библиотека, г. Неман, ул. Победы, д. 10"
+          ],
+          "importance": "core",
+          "note": "Адрес в структурированном поле и рабочее место в описании находятся в разных городах."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "employment",
+          "note": "Срочный договор с указанной датой окончания и основанием не противоречит полной занятости: это разные характеристики условий."
+        },
+        {
+          "topic": "requirements",
+          "note": "Опыт 0 лет и фраза «опыт будет преимуществом» не противоречат друг другу: опыт желателен, но не обязателен."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-007",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "title",
+          "note": "Скобки в названии — официальное наименование должности (палатная, она же постовая), а не неопределённость."
+        },
+        {
+          "topic": "schedule",
+          "note": "Режим «сутки через трое» с указанием начала и конца дежурства конкретен; оценивать его допустимость не требуется."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-008",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "fields": [
+            "schedule",
+            "duty"
+          ],
+          "quotes": [
+            "Понедельник–пятница, 09:00–18:00",
+            "проведение мероприятий в выходные и праздничные дни"
+          ],
+          "importance": "core",
+          "note": "График указан только по будням, а в обязанностях есть работа в выходные и праздники; непонятно, как она учитывается."
+        },
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": [
+            "requirement.experience",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "2",
+            "Рассматриваем кандидатов без опыта работы"
+          ],
+          "importance": "core",
+          "note": "В поле опыта указано 2 года, а в описании сказано, что опыт не нужен."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-009",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-010",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirements"
+          ],
+          "quotes": [
+            "Наличие группы допуска по электробезопасности."
+          ],
+          "importance": "core",
+          "note": "Не указано, какая группа допуска требуется, а от неё зависит, подходит ли кандидат."
+        },
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "addresses.address.location"
+          ],
+          "quotes": [
+            "Славский муниципальный округ"
+          ],
+          "importance": "core",
+          "note": "Указан только муниципальный округ без населённого пункта и адреса, поэтому неясно, куда ездить на работу."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-011",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "employment",
+          "type": "ambiguity",
+          "fields": [
+            "employment"
+          ],
+          "quotes": [
+            "Сезонная"
+          ],
+          "importance": "core",
+          "note": "Работа сезонная, но не указаны ни период, ни срок договора, поэтому непонятно, на сколько месяцев предлагается работа."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-012",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "fields": [
+            "job-name"
+          ],
+          "quotes": [
+            "Ведущий специалист"
+          ],
+          "importance": "core",
+          "note": "Название указывает только уровень должности, но не направление работы или отдел, поэтому вакансию трудно найти и понять по названию."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-013",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-014",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "fields": [
+            "employment",
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Полная занятость",
+            "Нагрузка — 0,5 ставки"
+          ],
+          "importance": "core",
+          "note": "Тип занятости указан как полный, а в описании и в графике (2 часа в день) — половина ставки."
+        },
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "fields": [
+            "salary_min"
+          ],
+          "quotes": [
+            "26000"
+          ],
+          "importance": "accept",
+          "note": "Из-за противоречия в занятости неясно, за какой объём работы указана сумма; уточнение допустимо, но не обязательно."
+        }
+      ],
+      "must_not_flag": [
+        {
+          "topic": "requirements",
+          "note": "В поле образования стоит «Не указано», но требуемое образование конкретно описано в квалификации; справка о судимости и медкнижка — обычные требования для работы в школе."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-015",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Оплата 2 400 руб. за смену."
+          ],
+          "importance": "core",
+          "note": "Указана только оплата за смену, а число смен в месяц неизвестно, поэтому месячный доход определить нельзя."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [
+            "Сменный график"
+          ],
+          "importance": "core",
+          "note": "Не указаны продолжительность смены, её время и чередование смен и выходных, хотя в обязанностях есть ночные обходы."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-016",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-017",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "salary",
+          "note": "Сумма выглядит низкой, но соответствует работе на 0,5 ставки и указана конкретно; выводы о соответствии закону делать не нужно."
+        },
+        {
+          "topic": "employment",
+          "note": "Частичная занятость, 0,5 ставки и три рабочих дня по 4 часа согласуются между собой."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-018",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "missing",
+          "fields": [
+            "addresses.address.location"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Указан только регион, ни город, ни адрес рабочего места нигде не названы."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-019",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "contradiction",
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes": [
+            "Воспитатель",
+            "Помощь воспитателю"
+          ],
+          "importance": "core",
+          "note": "Название — «Воспитатель», а обязанности описывают работу помощника (младшего) воспитателя, поэтому непонятно, на какую должность набор."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.education"
+          ],
+          "quotes": [
+            "Не указано"
+          ],
+          "importance": "accept",
+          "note": "При названии «Воспитатель» требования к образованию не указаны; это следствие того же расхождения, поэтому замечание допустимо, но не обязательно."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-020",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-021",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "missing",
+          "fields": [
+            "schedule"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Поле графика пустое, и в описании нет ни рабочих дней, ни часов работы."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-022",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {
+          "topic": "schedule",
+          "note": "«Гибкий график» в поле раскрыт в описании: рабочие дни, окно начала дня, продолжительность и обязательные часы присутствия указаны."
+        }
+      ]
+    },
+    {
+      "id": "BLIND-E-023",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "requirement.qualification"
+          ],
+          "quotes": [
+            "Работа в одном из офисов учреждения по согласованию"
+          ],
+          "importance": "core",
+          "note": "Не указано, в каком офисе предстоит работать и как он выбирается, а в адресе только город."
+        },
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": [
+            "addresses.address.location"
+          ],
+          "quotes": [
+            "г. Калининград"
+          ],
+          "importance": "accept",
+          "note": "Адрес ограничен городом; это та же проблема места работы, отдельное замечание по полю адреса допустимо."
+        }
+      ],
+      "must_not_flag": []
+    },
+    {
+      "id": "BLIND-E-024",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "missing",
+          "fields": [
+            "requirement.education",
+            "requirement.qualification",
+            "requirements"
+          ],
+          "quotes": [],
+          "importance": "core",
+          "note": "Для медицинской должности не указаны ни образование, ни квалификация, ни какие-либо другие требования к кандидату."
+        }
+      ],
+      "must_not_flag": []
+    }
+  ]
+}

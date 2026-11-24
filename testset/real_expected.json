@@ -1,0 +1,1057 @@
+{
+  "rules": {
+    "TTL-1": {
+      "topic": "title",
+      "kind": "must",
+      "title": "Безликое название, обязанности его не раскрывают"
+    },
+    "TTL-2": {
+      "topic": "title",
+      "kind": "must",
+      "title": "Название и обязанности о разных профессиях"
+    },
+    "TTL-3": {
+      "topic": "title",
+      "kind": "must",
+      "title": "Несколько разных профессий в названии, обязанности покрывают не все"
+    },
+    "TTL-4": {
+      "topic": "title",
+      "kind": "must",
+      "title": "Сведения в названии спорят с полем другой темы"
+    },
+    "DUT-1": {
+      "topic": "duties",
+      "kind": "must",
+      "title": "Только отсылка или заглушка"
+    },
+    "DUT-2": {
+      "topic": "duties",
+      "kind": "must",
+      "title": "Не задачи: личные качества, реклама, льготы"
+    },
+    "DUT-3": {
+      "topic": "duties",
+      "kind": "must",
+      "title": "Пусто и в duty, и в skills"
+    },
+    "DUT-4": {
+      "topic": "duties",
+      "kind": "must",
+      "title": "Только «поручения руководителя»"
+    },
+    "REQ-1": {
+      "topic": "requirements",
+      "kind": "skip",
+      "title": "Образование не определено ни в поле, ни в тексте"
+    },
+    "REQ-2": {
+      "topic": "requirements",
+      "kind": "must",
+      "title": "Опыт в поле расходится с определённым числом в тексте"
+    },
+    "REQ-3": {
+      "topic": "requirements",
+      "kind": "must",
+      "title": "Минимальный уровень образования в поле и тексте разный"
+    },
+    "REQ-4": {
+      "topic": "requirements",
+      "kind": "must",
+      "title": "Поле qualification спорит с полем опыта"
+    },
+    "REQ-5": {
+      "topic": "requirements",
+      "kind": "skip",
+      "title": "Размытые формулировки, отраслевые детали"
+    },
+    "REQ-6": {
+      "topic": "requirements",
+      "kind": "flag",
+      "title": "Регламентированная профессия без требований"
+    },
+    "REQ-7": {
+      "topic": "requirements",
+      "kind": "must",
+      "title": "Одно требование в двух местах описано противоположно"
+    },
+    "PAY-1": {
+      "topic": "salary",
+      "kind": "must",
+      "title": "Суммы нет нигде или только отсылка"
+    },
+    "PAY-2": {
+      "topic": "salary",
+      "kind": "must",
+      "title": "Итоговая сумма в тексте вне допуска от вилки"
+    },
+    "PAY-3": {
+      "topic": "salary",
+      "kind": "must",
+      "title": "Минимум больше максимума"
+    },
+    "PAY-4": {
+      "topic": "salary",
+      "kind": "must",
+      "title": "Вилка шире порога без объяснения"
+    },
+    "PAY-5": {
+      "topic": "salary",
+      "kind": "must",
+      "title": "Единица оплаты неясна"
+    },
+    "PAY-6": {
+      "topic": "salary",
+      "kind": "flag",
+      "title": "Сумма при неполном времени без доли ставки"
+    },
+    "PAY-7": {
+      "topic": "salary",
+      "kind": "skip",
+      "title": "Состав оплаты без влияния на сумму, коды премий"
+    },
+    "SCH-1": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Открытый режим без параметров"
+    },
+    "SCH-2": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Режим в поле расходится с текстом"
+    },
+    "SCH-3": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Дневная смена в поле, ночная в тексте (и наоборот)"
+    },
+    "SCH-4": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Два взаимоисключающих графика"
+    },
+    "SCH-5": {
+      "topic": "schedule",
+      "kind": "flag",
+      "title": "Параметры частичные или даны вариантами"
+    },
+    "SCH-6": {
+      "topic": "schedule",
+      "kind": "skip",
+      "title": "Закрытый режим без часов"
+    },
+    "SCH-7": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Работа вне графика без частоты и условий"
+    },
+    "SCH-8": {
+      "topic": "schedule",
+      "kind": "must",
+      "title": "Часы в день не сходятся с заявленной недельной нормой"
+    },
+    "LOC-1": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Нет населённого пункта"
+    },
+    "LOC-2": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Адрес и названное в тексте место работы в разных населённых пунктах"
+    },
+    "LOC-3": {
+      "topic": "location",
+      "kind": "skip",
+      "title": "Разъезды, удалённая работа, несколько адресов"
+    },
+    "LOC-4": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Внутри строки адреса два разных населённых пункта"
+    },
+    "LOC-5": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Дистанционная работа и обязательное присутствие в одной вакансии"
+    },
+    "LOC-6": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Адрес или формат рабочего места отложены до собеседования"
+    },
+    "LOC-7": {
+      "topic": "location",
+      "kind": "must",
+      "title": "Несколько адресов в разных населённых пунктах без указания основного"
+    },
+    "EMP-1": {
+      "topic": "employment",
+      "kind": "must",
+      "title": "Поле занятости расходится с объёмом работы"
+    },
+    "EMP-2": {
+      "topic": "employment",
+      "kind": "skip",
+      "title": "Поля занятости нет"
+    },
+    "EMP-3": {
+      "topic": "employment",
+      "kind": "must",
+      "title": "Работа на срок, а поле занятости этого не отражает"
+    }
+  },
+  "topics": [
+    "title",
+    "duties",
+    "requirements",
+    "salary",
+    "schedule",
+    "location",
+    "employment"
+  ],
+  "types": [
+    "missing",
+    "ambiguity",
+    "contradiction"
+  ],
+  "forbidden_patterns": [
+    "нарушен",
+    "незаконн",
+    "противозаконн",
+    "по закону",
+    "закон\\w* (запрещ|обязыва|требу)",
+    "\\bТК\\b",
+    "Трудов\\w+ кодекс",
+    "\\bст\\.\\s*\\d+",
+    "\\bМРОТ\\b",
+    "дискриминац",
+    "штраф",
+    "\\bобязан[аоы]?\\b",
+    "недопустим",
+    "занижен",
+    "ниже рынка",
+    "скорее всего",
+    "вероятно"
+  ],
+  "scoring": [
+    "Замечание засчитывается пункту must, если совпала тема (любая из перечисленных).",
+    "Для противоречия в замечании должны быть цитаты из обеих групп quotes_all.",
+    "Типы missing и ambiguity считаются одним классом «неполнота»; ошибка типа — только путаница с contradiction.",
+    "Пункт must без замечания — пропуск.",
+    "Замечание по теме из clean_topics — ложное срабатывание.",
+    "Темы из optional в счёт не идут; поле lean показывает наш выбор по умолчанию (flag — выводим, skip — нет).",
+    "Тексты problem и recommendation не должны совпадать с forbidden_patterns."
+  ],
+  "vacancies": [
+    {
+      "id": "fef47018-e7e7-11f1-8b9b-2d3c6bbc3309",
+      "case": "fef47018",
+      "intent": "Полный рабочий день в поле, «06.00-18.00, 2/2» в поле квалификации",
+      "must": [
+        {
+          "rule": "SCH-2",
+          "topic": [
+            "schedule"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "schedule",
+            "requirement.qualification"
+          ],
+          "quotes_all": [
+            [
+              "Полный рабочий день"
+            ],
+            [
+              "график работы 06.00-18.00, 2/2"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле указан полный рабочий день, а в условиях — график 2/2 с 6:00 до 18:00.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или условия."
+        }
+      ],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2"
+      ]
+    },
+    {
+      "id": "c09b2588-e7eb-11f1-ba9d-976d66553d64",
+      "case": "c09b2588",
+      "intent": "Полный рабочий день в поле, ночная работа в тексте с буквами-двойниками",
+      "must": [
+        {
+          "rule": "SCH-2",
+          "topic": [
+            "schedule"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "schedule",
+            "requirements"
+          ],
+          "quotes_all": [
+            [
+              "Полный рабочий день"
+            ],
+            [
+              "только в ночь"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле указан полный рабочий день, а в тексте — работа с 19:00 только в ночь.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или текст."
+        }
+      ],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "TTL-3",
+        "REQ-1"
+      ]
+    },
+    {
+      "id": "460f1c08-600e-11f1-a885-41d00752341b",
+      "case": "460f1c08",
+      "intent": "Полный рабочий день в поле, сменный график в двух других полях",
+      "must": [
+        {
+          "rule": "SCH-2",
+          "topic": [
+            "schedule"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "schedule",
+            "requirement.qualification",
+            "term.text"
+          ],
+          "quotes_all": [
+            [
+              "Полный рабочий день"
+            ],
+            [
+              "сменый график",
+              "Чередование утренней и вечерней смены"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле указан полный рабочий день, а в условиях — сменный график с чередованием смен.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или условия."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "salary",
+          "rule": "PAY-7",
+          "lean": "skip",
+          "note": "код премии «MONTHLY 2000» без расшифровки"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "location",
+        "employment"
+      ],
+      "negative_for": []
+    },
+    {
+      "id": "59c75ca5-5351-11f1-bb82-7f8bb357025f",
+      "case": "59c75ca5",
+      "intent": "Опыт 1 в поле, «не менее 3 лет» в поле квалификации",
+      "must": [
+        {
+          "rule": "REQ-2",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "requirement.experience",
+            "qualification"
+          ],
+          "quotes_all": [
+            [
+              "1"
+            ],
+            [
+              "не менее 3 лет"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле опыта указан 1 год, а в квалификации — стаж не менее 3 лет.",
+          "recommendation": "Уточните минимальный стаж и приведите поле опыта и текст к одному значению."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        },
+        {
+          "topic": "employment",
+          "rule": "EMP-2",
+          "lean": "skip",
+          "note": "поля занятости нет"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "location"
+      ],
+      "negative_for": []
+    },
+    {
+      "id": "84f7e108-a545-11f1-814b-85cd14236c66",
+      "case": "84f7e108",
+      "intent": "Опыт 3 в поле, «не менее полугода» в тексте",
+      "must": [
+        {
+          "rule": "REQ-2",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "requirement.experience",
+            "requirements"
+          ],
+          "quotes_all": [
+            [
+              "3"
+            ],
+            [
+              "не менее полугода"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле опыта указано 3 года, а в тексте — не менее полугода.",
+          "recommendation": "Уточните минимальный стаж и приведите поле опыта и текст к одному значению."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": []
+    },
+    {
+      "id": "848fd258-e7de-11f1-ba9d-976d66553d64",
+      "case": "848fd258",
+      "intent": "Опыт 3 в поле, «от 6 мес.» в тексте; график 5/2 в поле квалификации — норма",
+      "must": [
+        {
+          "rule": "REQ-2",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "requirement.experience",
+            "requirements"
+          ],
+          "quotes_all": [
+            [
+              "3"
+            ],
+            [
+              "от 6 мес"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле опыта указано 3 года, а в тексте — от 6 месяцев.",
+          "recommendation": "Уточните минимальный стаж и приведите поле опыта и текст к одному значению."
+        }
+      ],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "SCH-2"
+      ]
+    },
+    {
+      "id": "f2307bf4-bb44-11f1-bd0c-e5f68bcce605",
+      "case": "f2307bf4",
+      "intent": "Опыт 2 в поле, «минимум 6 мес.» в тексте; вилка в 3 раза объяснена ставкой и процентом",
+      "must": [
+        {
+          "rule": "REQ-2",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "requirement.experience",
+            "duty"
+          ],
+          "quotes_all": [
+            [
+              "2"
+            ],
+            [
+              "минимум 6 мес"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле опыта указано 2 года, а в тексте — минимум 6 месяцев.",
+          "recommendation": "Уточните минимальный стаж и приведите поле опыта и текст к одному значению."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "salary",
+          "rule": "PAY-4",
+          "lean": "skip",
+          "note": "вилка 50–150 тыс. объяснена ставкой за смену и процентом от продаж"
+        },
+        {
+          "topic": "employment",
+          "rule": "EMP-2",
+          "lean": "skip",
+          "note": "поля занятости нет"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "schedule",
+        "location"
+      ],
+      "negative_for": [
+        "SCH-1"
+      ]
+    },
+    {
+      "id": "61e7b3d8-a2d3-11f1-b956-512fe6f6cdc2",
+      "case": "61e7b3d8",
+      "intent": "Квалификация «Без опыта», опыт 1 в поле и «не менее полугода» в тексте",
+      "must": [
+        {
+          "rule": "REQ-4",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "qualification",
+            "requirement.experience",
+            "requirements"
+          ],
+          "quotes_all": [
+            [
+              "Без опыта"
+            ],
+            [
+              "не менее полугода",
+              "1"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле квалификации указано «Без опыта», а в поле опыта — 1 год и в тексте — не менее полугода.",
+          "recommendation": "Уточните, требуется ли опыт работы и какой."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-3"
+      ]
+    },
+    {
+      "id": "ae8d3dd8-37e0-11f1-893d-d9cbc9403423",
+      "case": "ae8d3dd8",
+      "intent": "Общее образование в поле, среднее профессиональное в тексте; сменная работа без расписания",
+      "must": [
+        {
+          "rule": "REQ-3",
+          "topic": [
+            "requirements"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "requirement.education",
+            "requirements"
+          ],
+          "quotes_all": [
+            [
+              "Общее образование"
+            ],
+            [
+              "Среднее профессиональное (техническое) образование"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В поле образования указано общее, а в тексте — среднее профессиональное (техническое).",
+          "recommendation": "Уточните минимально необходимый уровень образования и исправьте поле или текст."
+        },
+        {
+          "rule": "SCH-1",
+          "topic": [
+            "schedule"
+          ],
+          "type": [
+            "ambiguity"
+          ],
+          "fields": [
+            "schedule",
+            "shift"
+          ],
+          "quotes_all": [],
+          "quotes_any": [
+            "Сменная работа",
+            "По графику сменности"
+          ],
+          "problem": "Указана сменная работа, но нет длительности смен и их чередования.",
+          "recommendation": "Уточните длительность смены, чередование рабочих и выходных дней и наличие ночных смен."
+        }
+      ],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "LOC-2"
+      ]
+    },
+    {
+      "id": "6d03a945-e32e-11ec-ba26-550ed7335bbe",
+      "case": "6d03a945",
+      "intent": "Учитель английского языка, в обязанностях преподавание химии",
+      "must": [
+        {
+          "rule": "TTL-2",
+          "topic": [
+            "title",
+            "duties"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes_all": [
+            [
+              "учитель английского языка"
+            ],
+            [
+              "преподаваемого предмета химия"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "Должность — учитель английского языка, а в обязанностях речь о предмете химия.",
+          "recommendation": "Уточните, какой предмет предстоит преподавать, и приведите название и обязанности в соответствие."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "requirements",
+          "rule": "REQ-5",
+          "lean": "skip",
+          "note": "требования записаны выдержками из стандарта"
+        },
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": []
+    },
+    {
+      "id": "f1798e98-e281-11f1-af87-79fdeb0404fd",
+      "case": "f1798e98",
+      "intent": "Уборщик, в обязанностях чистка овощей и помощь на кухне",
+      "must": [
+        {
+          "rule": "TTL-2",
+          "topic": [
+            "title",
+            "duties"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "job-name",
+            "duty"
+          ],
+          "quotes_all": [
+            [
+              "уборщик"
+            ],
+            [
+              "Чистка овощей, помощь на кухне"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "Должность называется «уборщик», а обязанности — чистка овощей и помощь на кухне.",
+          "recommendation": "Уточните, на какую должность открыта вакансия, и приведите название и обязанности в соответствие."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "requirements",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "TTL-1"
+      ]
+    },
+    {
+      "id": "71e26724-5810-11f1-b860-87bb8eb8da0c",
+      "case": "71e26724",
+      "intent": "В строке адреса Гурьевск и посёлок Васильково; график дан вариантами",
+      "must": [
+        {
+          "rule": "LOC-4",
+          "topic": [
+            "location"
+          ],
+          "type": [
+            "contradiction"
+          ],
+          "fields": [
+            "addresses.address"
+          ],
+          "quotes_all": [
+            [
+              "г. Гурьевск"
+            ],
+            [
+              "поселок Васильково"
+            ]
+          ],
+          "quotes_any": [],
+          "problem": "В адресе названы два населённых пункта: Гурьевск и посёлок Васильково.",
+          "recommendation": "Уточните, в каком населённом пункте находится место работы."
+        }
+      ],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-5",
+          "lean": "flag",
+          "note": "графики перечислены вариантами, часов нет"
+        },
+        {
+          "topic": "requirements",
+          "rule": "REQ-1",
+          "lean": "flag",
+          "note": "образование «Не указано», в тексте «остальному научим»"
+        },
+        {
+          "topic": "employment",
+          "rule": "EMP-2",
+          "lean": "skip",
+          "note": "поля занятости нет"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary"
+      ],
+      "negative_for": [
+        "PAY-2",
+        "DUT-2"
+      ]
+    },
+    {
+      "id": "7ed4e6c5-dd1f-11ed-82ad-17f530626801",
+      "case": "7ed4e6c5",
+      "intent": "Оклад 14000 в условиях при вилке 28–30 тыс.: часть заработка, а не противоречие",
+      "must": [],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "PAY-2",
+        "REQ-1"
+      ]
+    },
+    {
+      "id": "de5ae404-e7ed-11f1-97a0-6b8e97d8bf9c",
+      "case": "de5ae404",
+      "intent": "«Составление графиков» в обязанностях — не график работы",
+      "must": [],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        },
+        {
+          "topic": "employment",
+          "rule": "EMP-2",
+          "lean": "skip",
+          "note": "поля занятости нет"
+        },
+        {
+          "topic": "requirements",
+          "rule": "REQ-2",
+          "lean": "flag",
+          "note": "опыт 0 в поле, в тексте опыт электромонтёром без срока"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "salary",
+        "location"
+      ],
+      "negative_for": [
+        "SCH-2"
+      ]
+    },
+    {
+      "id": "ed297028-76da-11f1-a323-9d73f5e76293",
+      "case": "ed297028",
+      "intent": "Учитель: 36 часов нагрузки при полном дне; отсылка к инструкции рядом с задачами",
+      "must": [],
+      "optional": [
+        {
+          "topic": "schedule",
+          "rule": "SCH-6",
+          "lean": "skip",
+          "note": "полный рабочий день без часов и дней"
+        }
+      ],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "DUT-1",
+        "EMP-1"
+      ]
+    },
+    {
+      "id": "ada414f8-dda5-11f1-8798-75bc1c1c1094",
+      "case": "ada414f8",
+      "intent": "Чистая: график с часами в поле квалификации, текст с буквами-двойниками",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2"
+      ]
+    },
+    {
+      "id": "1ba5c9a0-d453-11f1-866f-d9b02784358d",
+      "case": "1ba5c9a0",
+      "intent": "Чистая: опыт 1 в поле и «от 6-ти месяцев» в тексте",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2",
+        "SCH-6"
+      ]
+    },
+    {
+      "id": "5babba98-c79d-11f1-9dff-97d306130813",
+      "case": "5babba98",
+      "intent": "Чистая: короткие конкретные обязанности",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2",
+        "DUT-1"
+      ]
+    },
+    {
+      "id": "98fbb208-85db-11f1-ae5d-9f41f4fa76e3",
+      "case": "98fbb208",
+      "intent": "Чистая: опыт 1 в поле и «от 6 мес.» в тексте",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2"
+      ]
+    },
+    {
+      "id": "188ecc08-e7e3-11f1-8931-dd33cc8cc9df",
+      "case": "188ecc08",
+      "intent": "Чистая: «Без опыта» согласовано в трёх местах",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-4",
+        "DUT-1"
+      ]
+    },
+    {
+      "id": "5082e458-c7a6-11f1-9a33-81fa0fc133be",
+      "case": "5082e458",
+      "intent": "Чистая: обязанности с буквами-двойниками",
+      "must": [],
+      "optional": [],
+      "clean_topics": [
+        "title",
+        "duties",
+        "requirements",
+        "salary",
+        "schedule",
+        "location",
+        "employment"
+      ],
+      "negative_for": [
+        "REQ-2"
+      ]
+    }
+  ]
+}

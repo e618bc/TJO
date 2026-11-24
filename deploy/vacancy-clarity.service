@@ -1,0 +1,14 @@
+# Скопируйте в /etc/systemd/system/, поправьте пути, затем
+#   systemctl daemon-reload && systemctl enable --now vacancy-clarity
+[Unit]
+Description=Прозрачная вакансия: отчёт по вакансиям региона 39 по расписанию
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/vacancy-clarity
+ExecStart=/usr/bin/python3 -m vacancy_clarity schedule
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,226 @@
+{
+  "status": "200",
+  "request": {
+    "api": "v1"
+  },
+  "meta": {
+    "total": 4,
+    "limit": 100
+  },
+  "results": {
+    "vacancies": [
+      {
+        "vacancy": {
+          "id": "7e570000-0000-4000-8000-00000000a001",
+          "job-name": "Дворник",
+          "duty": "Уборка территории двора, очистка урн."
+        }
+      },
+      {
+        "vacancy": {
+          "id": "7e570000-0000-4000-8000-00000000a002",
+          "source": "Вакансия работодателя",
+          "region": {
+            "region_code": "3900000000000",
+            "name": "Калининградская область"
+          },
+          "company": {
+            "companycode": "0000000000000",
+            "email": "kadry@example.org",
+            "hr-agency": false,
+            "inn": "0000000000",
+            "kpp": "000000000",
+            "name": "МАДОУ \"Учебный детский сад\"",
+            "ogrn": "0000000000000",
+            "url": "https://trudvsem.ru/company/0000000000000"
+          },
+          "creation-date": "2026-11-02",
+          "date_modify": "2026-11-20T10:00:00+0300",
+          "salary": "от 45000",
+          "salary_min": "45000",
+          "salary_max": null,
+          "job-name": "Медицинская сестра процедурной",
+          "vac_url": "https://trudvsem.ru/vacancy/card/0000000000000/7e570000-0000-4000-8000-00000000a002",
+          "employment": "Полная занятость",
+          "schedule": "Полный рабочий день",
+          "requirements": "Среднее профессиональное образование по специальности «Сестринское дело», действующая аккредитация, опыт работы от 1 года.",
+          "duty": "Выполнение внутривенных и внутримышечных инъекций, забор крови на анализ, подготовка процедурного кабинета к работе, ведение журналов учёта процедур. Оклад 45 000 руб., с надбавками за стаж и категорию — до 66 000 руб. Режим работы: понедельник–пятница с 9:00 до 18:00, перерыв с 13:00 до 14:00.",
+          "category": {
+            "specialisation": "Образование, наука"
+          },
+          "requirement": {
+            "education": "Среднее профессиональное образование",
+            "experience": 1
+          },
+          "addresses": {
+            "address": [
+              {
+                "location": "Калининградская область, г Калининград, Учебная улица, дом: 1;",
+                "lng": "20.5",
+                "lat": "54.7"
+              }
+            ]
+          },
+          "social_protected": "",
+          "contact_list": [
+            {
+              "contact_type": "Телефон",
+              "contact_value": "+7(000) 000-00-00"
+            }
+          ],
+          "contact_person": "Специалист по кадрам",
+          "work_places": 1,
+          "skills": null,
+          "workPlaceType": {
+            "workPlaceForeign": false,
+            "workPlaceOrdinary": true,
+            "workPlaceQuota": false,
+            "workPlaceSpecial": false
+          },
+          "shift": null,
+          "trainingDays": 0,
+          "currency": "«руб.»",
+          "qualification": ".",
+          "typicalPosition": "Ничего не выбрано",
+          "term": null,
+          "unknown_field": {
+            "x": 1
+          }
+        }
+      },
+      {
+        "vacancy": {
+          "id": "7e570000-0000-4000-8000-00000000a003",
+          "source": "Вакансия работодателя",
+          "region": {
+            "region_code": "3900000000000",
+            "name": "Калининградская область"
+          },
+          "company": {
+            "companycode": "0000000000000",
+            "email": "kadry@example.org",
+            "hr-agency": false,
+            "inn": "0000000000",
+            "kpp": "000000000",
+            "name": "МАДОУ \"Учебный детский сад\"",
+            "ogrn": "0000000000000",
+            "url": "https://trudvsem.ru/company/0000000000000"
+          },
+          "creation-date": "2026-11-02",
+          "date_modify": "2026-11-20T10:00:00+0300",
+          "salary": "от 45000",
+          "salary_min": 45000,
+          "salary_max": 66000,
+          "job-name": "Медицинская сестра процедурной",
+          "employment": "Полная занятость",
+          "schedule": "Полный рабочий день",
+          "requirements": "Среднее профессиональное образование по специальности «Сестринское дело», действующая аккредитация, опыт работы от 1 года.",
+          "duty": "Выполнение внутривенных и внутримышечных инъекций, забор крови на анализ, подготовка процедурного кабинета к работе, ведение журналов учёта процедур. Оклад 45 000 руб., с надбавками за стаж и категорию — до 66 000 руб. Режим работы: понедельник–пятница с 9:00 до 18:00, перерыв с 13:00 до 14:00.",
+          "category": {
+            "specialisation": "Образование, наука"
+          },
+          "requirement": {
+            "education": "Среднее профессиональное образование",
+            "experience": 1
+          },
+          "addresses": {
+            "address": [
+              {
+                "location": "Калининградская область, г Калининград, Учебная улица, дом: 1;",
+                "lng": "20.5",
+                "lat": "54.7"
+              }
+            ]
+          },
+          "social_protected": "",
+          "contact_list": [
+            {
+              "contact_type": "Телефон",
+              "contact_value": "+7(000) 000-00-00"
+            }
+          ],
+          "contact_person": "Специалист по кадрам",
+          "work_places": 1,
+          "skills": [],
+          "workPlaceType": {
+            "workPlaceForeign": false,
+            "workPlaceOrdinary": true,
+            "workPlaceQuota": false,
+            "workPlaceSpecial": false
+          },
+          "shift": [],
+          "trainingDays": 0,
+          "currency": "«руб.»",
+          "qualification": ".",
+          "typicalPosition": "Ничего не выбрано"
+        }
+      },
+      {
+        "vacancy": {
+          "source": "Вакансия работодателя",
+          "region": {
+            "region_code": "3900000000000",
+            "name": "Калининградская область"
+          },
+          "company": {
+            "companycode": "0000000000000",
+            "email": "kadry@example.org",
+            "hr-agency": false,
+            "inn": "0000000000",
+            "kpp": "000000000",
+            "name": "МАДОУ \"Учебный детский сад\"",
+            "ogrn": "0000000000000",
+            "url": "https://trudvsem.ru/company/0000000000000"
+          },
+          "creation-date": "2026-11-02",
+          "date_modify": "2026-11-20T10:00:00+0300",
+          "salary": "от 45000",
+          "salary_min": 45000,
+          "salary_max": 66000,
+          "job-name": "Медицинская сестра процедурной",
+          "employment": "Полная занятость",
+          "schedule": "Полный рабочий день",
+          "requirements": "Среднее профессиональное образование по специальности «Сестринское дело», действующая аккредитация, опыт работы от 1 года.",
+          "duty": "Выполнение внутривенных и внутримышечных инъекций, забор крови на анализ, подготовка процедурного кабинета к работе, ведение журналов учёта процедур. Оклад 45 000 руб., с надбавками за стаж и категорию — до 66 000 руб. Режим работы: понедельник–пятница с 9:00 до 18:00, перерыв с 13:00 до 14:00.",
+          "category": {
+            "specialisation": "Образование, наука"
+          },
+          "requirement": {
+            "education": "Среднее профессиональное образование",
+            "experience": 1
+          },
+          "addresses": {
+            "address": [
+              {
+                "location": "Калининградская область, г Калининград, Учебная улица, дом: 1;",
+                "lng": "20.5",
+                "lat": "54.7"
+              }
+            ]
+          },
+          "social_protected": "",
+          "contact_list": [
+            {
+              "contact_type": "Телефон",
+              "contact_value": "+7(000) 000-00-00"
+            }
+          ],
+          "contact_person": "Специалист по кадрам",
+          "work_places": 1,
+          "skills": [],
+          "workPlaceType": {
+            "workPlaceForeign": false,
+            "workPlaceOrdinary": true,
+            "workPlaceQuota": false,
+            "workPlaceSpecial": false
+          },
+          "shift": [],
+          "trainingDays": 0,
+          "currency": "«руб.»",
+          "qualification": ".",
+          "typicalPosition": "Ничего не выбрано"
+        }
+      }
+    ]
+  }
+}

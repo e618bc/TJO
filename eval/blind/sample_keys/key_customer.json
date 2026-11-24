@@ -1,0 +1,257 @@
+{
+  "author": "customer",
+  "vacancies": [
+    {
+      "id": "DEMO-39-001",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {"topic": "requirements", "note": "Образование продублировано в requirement.education и requirement.qualification без расхождений, это не противоречие."},
+        {"topic": "requirements", "note": "«Грамотная письменная речь» — обычное требование для документооборота, а не неоднозначность, мешающая понять условия."},
+        {"topic": "schedule", "note": "График указан полностью (дни и часы), уточнять нечего."}
+      ]
+    },
+    {
+      "id": "DEMO-39-002",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "salary",
+          "type": "missing",
+          "fields": ["salary_min", "salary_max"],
+          "quotes": [],
+          "importance": "core",
+          "note": "Оплата не указана ни в полях (0/0), ни в описании, соискатель не знает размер заработка."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": ["schedule"],
+          "quotes": ["Гибкий график"],
+          "importance": "core",
+          "note": "При частичной занятости «гибкий график» не раскрыт нигде: неизвестны дни, часы и объём работы в неделю."
+        },
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "fields": ["duty"],
+          "quotes": ["Выполнение различных поручений руководителя."],
+          "importance": "core",
+          "note": "Обязанности не названы, по формулировке невозможно понять, в чём состоит работа."
+        },
+        {
+          "topic": "location",
+          "type": "missing",
+          "fields": ["addresses"],
+          "quotes": [],
+          "importance": "accept",
+          "note": "Указан только город, без адреса рабочего места."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": ["requirement.qualification", "requirements"],
+          "quotes": ["Готовность работать в динамичной команде.", "Ответственность, активность."],
+          "importance": "accept",
+          "note": "Требования сведены к общим личным качествам, не ясно, какие навыки нужны."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "requirements", "note": "requirement.education «Не указано» при experience 0 само по себе не дефект: работодатель вправе не требовать образования."},
+        {"topic": "employment", "note": "«Частичная занятость» — корректное значение; вопрос об объёме часов относится к графику, отдельное замечание по типу занятости лишнее."}
+      ]
+    },
+    {
+      "id": "DEMO-39-003",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "fields": ["requirement.experience", "requirement.qualification"],
+          "quotes": ["0", "Требуется не менее 5 лет опыта работы аналитиком данных."],
+          "importance": "core",
+          "note": "Структурное поле не требует опыта (а должность «Младший»), а текст требует не менее 5 лет — соискатель не поймёт, подходит ли он."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": ["schedule"],
+          "quotes": ["Полный рабочий день"],
+          "importance": "accept",
+          "note": "Не указаны рабочие дни и часы."
+        },
+        {
+          "topic": "location",
+          "type": "missing",
+          "fields": ["addresses"],
+          "quotes": [],
+          "importance": "accept",
+          "note": "Указан только город, без адреса рабочего места."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "salary", "note": "Вилка 60 000–80 000 RUB указана конкретно."},
+        {"topic": "requirements", "note": "Требование высшего образования и знания SQL само по себе не проблема и с другими полями не конфликтует."}
+      ]
+    },
+    {
+      "id": "DEMO-39-004",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "fields": ["duty", "requirement.qualification"],
+          "quotes": ["Работа полностью дистанционная из любого города.", "Обязательное ежедневное присутствие в офисе в Калининграде к 09:00."],
+          "importance": "core",
+          "note": "Описание обещает полностью удалённую работу, а требования — ежедневное присутствие в офисе; формат работы непонятен."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "schedule", "note": "График «Пятидневная рабочая неделя, 09:00–18:00» конкретен."},
+        {"topic": "salary", "note": "Вилка 40 000–50 000 RUB указана конкретно."},
+        {"topic": "requirements", "note": "Требование иметь компьютер и интернет — обычное условие для операторов, отдельным дефектом не является."}
+      ]
+    },
+    {
+      "id": "DEMO-39-005",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {"topic": "salary", "note": "salary_min = salary_max = 38 000 означает фиксированный оклад, а не ошибку или отсутствие вилки."},
+        {"topic": "requirements", "note": "Формулировка «Работа с каталогом и пользователями библиотеки» понятна по смыслу; придирка к тому, что это скорее навык, чем требование, — шум."},
+        {"topic": "requirements", "note": "Образование продублировано в двух полях без расхождений."}
+      ]
+    },
+    {
+      "id": "DEMO-39-006",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "fields": ["job-name"],
+          "quotes": ["Специалист"],
+          "importance": "core",
+          "note": "Название не указывает ни направление, ни специализацию должности."
+        },
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "fields": ["duty"],
+          "quotes": ["Работа с документами и другие задачи по необходимости."],
+          "importance": "core",
+          "note": "Обязанности размыты: не ясно, какие документы и какие «другие задачи»."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": ["schedule"],
+          "quotes": ["Сменный график"],
+          "importance": "core",
+          "note": "Не указаны схема смен и их продолжительность/время, конкретного расписания нигде нет."
+        },
+        {
+          "topic": "location",
+          "type": "missing",
+          "fields": ["addresses"],
+          "quotes": [],
+          "importance": "core",
+          "note": "Указан только регион, не ясен даже населённый пункт места работы."
+        },
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "fields": ["salary_min", "salary_max"],
+          "quotes": ["35000", "0"],
+          "importance": "accept",
+          "note": "Указан только нижний предел оплаты, верхняя граница не задана."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": ["requirement.qualification", "requirements"],
+          "quotes": ["Условия обсуждаются на собеседовании.", "Опыт работы приветствуется."],
+          "importance": "accept",
+          "note": "Вместо требований — отсылка к собеседованию и необязательное пожелание, не ясно, какой опыт и навыки нужны."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "employment", "note": "«Полная занятость» указана, отдельное замечание по типу занятости не нужно."}
+      ]
+    },
+    {
+      "id": "DEMO-39-007",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {"topic": "schedule", "note": "«Сменный график» раскрыт: 2/2, 08:00–20:00; вопрос о сменах был бы ложным срабатыванием."},
+        {"topic": "schedule", "note": "«Дежурство по утверждённому графику» в qualification согласуется с указанным 2/2 и не является неоднозначностью."},
+        {"topic": "requirements", "note": "experience = 1 и СПО согласуются с должностью и требованиями, противоречия нет."}
+      ]
+    },
+    {
+      "id": "DEMO-39-008",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "fields": ["requirement.qualification"],
+          "quotes": ["Возможен гибкий график без уточнения правил."],
+          "importance": "accept",
+          "note": "Базовое расписание есть, но не ясно, в чём состоит гибкость (сдвиг начала дня, согласование) — допустимо попросить описать правила."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "schedule", "note": "Вопрос о днях и часах работы или замечание «график не указан» ошибочны: в qualification есть «Пятидневная рабочая неделя с 09:00 до 18:00»."},
+        {"topic": "schedule", "note": "«Гибкий график» в schedule и 5/2 09:00–18:00 в qualification — не противоречие, а базовый режим с возможной гибкостью."},
+        {"topic": "salary", "note": "Вилка 55 000–70 000 RUB указана конкретно."}
+      ]
+    },
+    {
+      "id": "DEMO-39-009",
+      "is_clean": true,
+      "expected": [],
+      "must_not_flag": [
+        {"topic": "requirements", "note": "education «Не указано» и experience 0 при «Обучение предоставляется» — осознанно низкий порог входа, а не пропуск."},
+        {"topic": "schedule", "note": "График 5/2, 08:30–17:30 указан полностью."}
+      ]
+    },
+    {
+      "id": "DEMO-39-010",
+      "is_clean": false,
+      "expected": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "fields": ["requirement.qualification", "addresses"],
+          "quotes": ["Формат и адрес рабочего места уточняются при собеседовании.", "г. Калининград"],
+          "importance": "core",
+          "note": "Не ясны ни формат работы (офис/удалённо), ни адрес — указан только город, остальное отложено до собеседования."
+        },
+        {
+          "topic": "schedule",
+          "type": "missing",
+          "fields": ["schedule"],
+          "quotes": [],
+          "importance": "accept",
+          "note": "Указано 5/2, но не указаны часы работы."
+        },
+        {
+          "topic": "requirements",
+          "type": "ambiguity",
+          "fields": ["requirement.experience", "requirements"],
+          "quotes": ["0", "Опыт разработки учебных материалов и навыки работы с офисными программами."],
+          "importance": "accept",
+          "note": "Поле опыта — 0 лет, а в требованиях есть опыт разработки материалов; не ясно, обязателен ли он и в каком объёме."
+        }
+      ],
+      "must_not_flag": [
+        {"topic": "salary", "note": "Вилка 48 000–62 000 RUB указана конкретно."},
+        {"topic": "duties", "note": "Обязанности перечислены конкретно."}
+      ]
+    }
+  ]
+}

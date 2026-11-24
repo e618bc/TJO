@@ -1,0 +1,1477 @@
+{
+  "vacancies": [
+    {
+      "id": "f041df9f-db3c-5e11-826f-d656faa70402",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/f041df9f-db3c-5e11-826f-d656faa70402",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-2",
+          "field": "duty",
+          "quote": "Ответственность, пунктуальность, доброжелательность",
+          "problem": "В поле обязанностей указаны личные качества, а не то, что нужно делать.",
+          "recommendation": "Уточните, какие задачи выполняет администратор и с кем он работает."
+        }
+      ]
+    },
+    {
+      "id": "0ee5209d-27d0-572e-9958-792d3a5d3802",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/0ee5209d-27d0-572e-9958-792d3a5d3802",
+      "issues": []
+    },
+    {
+      "id": "7d823a30-faff-5f0b-842d-e4c8b2082bff",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/7d823a30-faff-5f0b-842d-e4c8b2082bff",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-4",
+          "field": "qualification",
+          "quote": "С опытом",
+          "field_2": "requirement.experience",
+          "quote_2": "0",
+          "problem": "В поле квалификации указано «С опытом», а в поле опыта — 0 лет.",
+          "recommendation": "Уточните, требуется ли опыт работы и какой."
+        }
+      ]
+    },
+    {
+      "id": "c51d6e4a-cf7d-5d28-99ea-953142a2b370",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c51d6e4a-cf7d-5d28-99ea-953142a2b370",
+      "issues": []
+    },
+    {
+      "id": "911eb50f-89b0-5c08-90d4-faebf092a2b6",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/911eb50f-89b0-5c08-90d4-faebf092a2b6",
+      "issues": []
+    },
+    {
+      "id": "1d4a7bf0-6088-5aa3-bb4a-5919a01f3548",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/1d4a7bf0-6088-5aa3-bb4a-5919a01f3548",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-5",
+          "field": "salary_min",
+          "quote": "350",
+          "problem": "Сумма 350 не похожа на месячную зарплату, единица оплаты не указана.",
+          "recommendation": "Уточните, за какой период или объём работы указана сумма и каков заработок за месяц."
+        }
+      ]
+    },
+    {
+      "id": "f6fe27c4-7c99-5ded-9204-ece3b119dbf2",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/f6fe27c4-7c99-5ded-9204-ece3b119dbf2",
+      "issues": []
+    },
+    {
+      "id": "f8fb9f05-c8fe-5c04-b635-8467b88dbfec",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/f8fb9f05-c8fe-5c04-b635-8467b88dbfec",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-7",
+          "field": "duty",
+          "quote": "Привлечение к работе в выходные дни по необходимости",
+          "problem": "Упомянута работа в выходные, но не сказано, как часто и на каких условиях.",
+          "recommendation": "Уточните частоту работы в выходные и её оплату или компенсацию."
+        }
+      ]
+    },
+    {
+      "id": "796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Режим гибкого рабочего времени",
+          "problem": "Указан гибкий график, но нигде нет дней и часов работы.",
+          "recommendation": "Уточните рабочие дни, длительность рабочего дня и границы начала и окончания работы."
+        }
+      ]
+    },
+    {
+      "id": "258f32d9-9029-51d7-b4a6-8565e4aeddb0",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/258f32d9-9029-51d7-b4a6-8565e4aeddb0",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "TTL-4",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "field_2": "job-name",
+          "quote_2": "график 2/2",
+          "problem": "В названии указан график 2/2, а в поле графика — полный рабочий день.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или название."
+        }
+      ]
+    },
+    {
+      "id": "b03916cb-5bb8-50d6-aca3-4a5ab592ab28",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/b03916cb-5bb8-50d6-aca3-4a5ab592ab28",
+      "issues": []
+    },
+    {
+      "id": "81db431a-8f6b-5711-aecb-7b4cc850b39e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/81db431a-8f6b-5711-aecb-7b4cc850b39e",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Режим гибкого рабочего времени",
+          "problem": "Указан гибкий график, комментарий его не раскрывает: дней и часов работы нет.",
+          "recommendation": "Уточните рабочие дни, длительность рабочего дня и границы начала и окончания работы."
+        }
+      ]
+    },
+    {
+      "id": "d55b7deb-bead-5c99-b74d-f28b15a4aeea",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d55b7deb-bead-5c99-b74d-f28b15a4aeea",
+      "issues": []
+    },
+    {
+      "id": "baceffbe-40dd-57db-a03c-5a8012f462f0",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/baceffbe-40dd-57db-a03c-5a8012f462f0",
+      "issues": []
+    },
+    {
+      "id": "4def23b3-17f1-56ba-8a26-22ebbb7f5b53",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/4def23b3-17f1-56ba-8a26-22ebbb7f5b53",
+      "issues": []
+    },
+    {
+      "id": "8980734a-08ef-5830-9985-a113cdcbf80f",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8980734a-08ef-5830-9985-a113cdcbf80f",
+      "issues": []
+    },
+    {
+      "id": "260afafe-5ff2-5ceb-ab95-5c6418df792f",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/260afafe-5ff2-5ceb-ab95-5c6418df792f",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-2",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "field_2": "term.text",
+          "quote_2": "Чередование утренней",
+          "problem": "В поле указан полный рабочий день, а в условиях — чередование утренней и вечерней смен.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или условия."
+        }
+      ]
+    },
+    {
+      "id": "61d0920d-fae3-52bd-becc-78f1c5ca12dd",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/61d0920d-fae3-52bd-becc-78f1c5ca12dd",
+      "issues": []
+    },
+    {
+      "id": "3f316c15-8f8b-59b1-998b-ae7b71b6f4b5",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3f316c15-8f8b-59b1-998b-ae7b71b6f4b5",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "rule": "LOC-1",
+          "field": "addresses.address",
+          "quote": "Гурьевский район",
+          "problem": "Место работы указано только как район, без населённого пункта.",
+          "recommendation": "Уточните населённый пункт и адрес, где предстоит работать."
+        }
+      ]
+    },
+    {
+      "id": "c99ec3e3-67a1-5565-bd51-77aaca6cc10d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c99ec3e3-67a1-5565-bd51-77aaca6cc10d",
+      "issues": []
+    },
+    {
+      "id": "60072ef6-5782-54df-a320-13ac06ebaefc",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/60072ef6-5782-54df-a320-13ac06ebaefc",
+      "issues": []
+    },
+    {
+      "id": "23d37351-a924-57c5-88ef-0967e76e265e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/23d37351-a924-57c5-88ef-0967e76e265e",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "missing",
+          "rule": "LOC-1",
+          "field": "addresses.address",
+          "quote": "",
+          "problem": "Место работы не указано ни в поле адреса, ни в тексте.",
+          "recommendation": "Уточните населённый пункт и адрес или территорию, где выполняется работа."
+        }
+      ]
+    },
+    {
+      "id": "000a1927-970b-5906-a2f0-a5eac08907fb",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/000a1927-970b-5906-a2f0-a5eac08907fb",
+      "issues": []
+    },
+    {
+      "id": "1ba38f8c-3774-5115-938e-3e3cc5da4f34",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/1ba38f8c-3774-5115-938e-3e3cc5da4f34",
+      "issues": []
+    },
+    {
+      "id": "9a0fac92-c274-5faa-ba2a-de517681e401",
+      "url": "",
+      "issues": []
+    },
+    {
+      "id": "30a424f3-5db8-5163-87f2-7a7545b79c03",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/30a424f3-5db8-5163-87f2-7a7545b79c03",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "rule": "LOC-4",
+          "field": "addresses.address",
+          "quote": "г. Гурьевск",
+          "field_2": "addresses.address",
+          "quote_2": "поселок Васильково",
+          "problem": "В адресе названы два населённых пункта: Гурьевск и посёлок Васильково.",
+          "recommendation": "Уточните, в каком населённом пункте находится место работы."
+        }
+      ]
+    },
+    {
+      "id": "9a7a11ab-6ad7-5561-83fe-c439ea6c8d5e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9a7a11ab-6ad7-5561-83fe-c439ea6c8d5e",
+      "issues": []
+    },
+    {
+      "id": "2defc45a-1d52-5632-b9a8-ef165c2032cd",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/2defc45a-1d52-5632-b9a8-ef165c2032cd",
+      "issues": []
+    },
+    {
+      "id": "cc241b4e-a4dc-51a9-a1fc-ec6c82b1e3fc",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/cc241b4e-a4dc-51a9-a1fc-ec6c82b1e3fc",
+      "issues": []
+    },
+    {
+      "id": "37ff00ea-814b-5f6e-9d35-2128582462b9",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/37ff00ea-814b-5f6e-9d35-2128582462b9",
+      "issues": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "rule": "TTL-1",
+          "field": "job-name",
+          "quote": "Работник",
+          "problem": "По названию «Работник» нельзя понять, какая работа предлагается.",
+          "recommendation": "Уточните наименование должности или профессии."
+        },
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-1",
+          "field": "duty",
+          "quote": "По договоренности",
+          "problem": "Обязанности не описаны.",
+          "recommendation": "Попросите перечислить основные задачи работника."
+        },
+        {
+          "topic": "salary",
+          "type": "missing",
+          "rule": "PAY-1",
+          "field": "salary",
+          "quote": "",
+          "problem": "Размер оплаты не указан.",
+          "recommendation": "Уточните оклад или диапазон заработной платы."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Режим гибкого рабочего времени",
+          "problem": "Указан гибкий график без дней и часов работы.",
+          "recommendation": "Уточните рабочие дни и продолжительность рабочего дня."
+        },
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "rule": "LOC-1",
+          "field": "addresses.address",
+          "quote": "Калининградская область",
+          "problem": "Место работы указано только как регион.",
+          "recommendation": "Уточните населённый пункт и адрес места работы."
+        }
+      ]
+    },
+    {
+      "id": "0d6aba98-4071-514f-aab9-693ff1ab7000",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/0d6aba98-4071-514f-aab9-693ff1ab7000",
+      "issues": []
+    },
+    {
+      "id": "cfd86472-23c8-5e3f-bda9-4dea63fd9bea",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/cfd86472-23c8-5e3f-bda9-4dea63fd9bea",
+      "issues": []
+    },
+    {
+      "id": "285bbd38-e74e-5ba6-8e99-2d5fd43e038c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/285bbd38-e74e-5ba6-8e99-2d5fd43e038c",
+      "issues": []
+    },
+    {
+      "id": "223cde7e-2941-52fa-a7c1-c9493ce323cb",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/223cde7e-2941-52fa-a7c1-c9493ce323cb",
+      "issues": []
+    },
+    {
+      "id": "650b84ec-c87d-548e-a24d-dacc2c28fdcd",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/650b84ec-c87d-548e-a24d-dacc2c28fdcd",
+      "issues": []
+    },
+    {
+      "id": "82ceedfc-8300-5199-a830-a8647c651615",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/82ceedfc-8300-5199-a830-a8647c651615",
+      "issues": []
+    },
+    {
+      "id": "3a5029ef-0b28-5dfc-a6e1-885c16133a14",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3a5029ef-0b28-5dfc-a6e1-885c16133a14",
+      "issues": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "rule": "TTL-1",
+          "field": "job-name",
+          "quote": "Специалист",
+          "problem": "По названию нельзя понять, какую работу предлагают, а обязанности его не раскрывают.",
+          "recommendation": "Уточните у работодателя полное наименование должности с направлением работы."
+        },
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-1",
+          "field": "duty",
+          "quote": "Выполнение работ в соответствии с должностной инструкцией",
+          "problem": "Вместо перечня обязанностей дана ссылка на должностную инструкцию.",
+          "recommendation": "Попросите перечислить основные задачи, которые работник выполняет ежедневно."
+        }
+      ]
+    },
+    {
+      "id": "7a93afdd-7f3a-58b1-bab7-db6628645198",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/7a93afdd-7f3a-58b1-bab7-db6628645198",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "rule": "PAY-2",
+          "field": "salary_min",
+          "quote": "45000",
+          "field_2": "salary_max",
+          "quote_2": "Доход до 120 000 рублей",
+          "problem": "В полях указана сумма 45 000, а в тексте — доход до 120 000 рублей.",
+          "recommendation": "Уточните гарантированную часть оплаты и условия, при которых доход выше."
+        }
+      ]
+    },
+    {
+      "id": "15e5dcdc-6d55-582f-847a-28d59a1aa7fe",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/15e5dcdc-6d55-582f-847a-28d59a1aa7fe",
+      "issues": []
+    },
+    {
+      "id": "e82f772d-897d-5f43-a2c5-bfa726e5dc06",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e82f772d-897d-5f43-a2c5-bfa726e5dc06",
+      "issues": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "rule": "EMP-3",
+          "field": "employment",
+          "quote": "Полная занятость",
+          "field_2": "duty",
+          "quote_2": "Временно, на период отпуска",
+          "problem": "В поле занятости работа не отмечена как временная, а в тексте она на период отпуска основного работника.",
+          "recommendation": "Уточните срок работы и отразите временный характер в поле занятости."
+        }
+      ]
+    },
+    {
+      "id": "b6104704-d57d-563b-9777-1dd6307d8fa9",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/b6104704-d57d-563b-9777-1dd6307d8fa9",
+      "issues": []
+    },
+    {
+      "id": "c30c2882-a8ee-5072-bd03-ddbee9137d61",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c30c2882-a8ee-5072-bd03-ddbee9137d61",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-2",
+          "field": "requirement.experience",
+          "quote": "0",
+          "field_2": "requirements",
+          "quote_2": "без опыта не рассматриваем",
+          "problem": "В поле опыта указано 0 лет, а в тексте сказано, что кандидаты без опыта не рассматриваются.",
+          "recommendation": "Уточните, какой стаж обязателен, и приведите поле опыта и текст к одному значению."
+        }
+      ]
+    },
+    {
+      "id": "e74b8603-4dcd-51bc-8851-a9787868d5b9",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e74b8603-4dcd-51bc-8851-a9787868d5b9",
+      "issues": []
+    },
+    {
+      "id": "bf51ac80-a129-58f4-920a-adb2dedcb89d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/bf51ac80-a129-58f4-920a-adb2dedcb89d",
+      "issues": []
+    },
+    {
+      "id": "f1e9125b-9445-5e5e-9130-cabf31254b5b",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/f1e9125b-9445-5e5e-9130-cabf31254b5b",
+      "issues": []
+    },
+    {
+      "id": "8a94d382-4053-5059-88e5-d1510dfec256",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8a94d382-4053-5059-88e5-d1510dfec256",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-2",
+          "field": "requirement.experience",
+          "quote": "0",
+          "field_2": "requirements",
+          "quote_2": "не менее 3 лет",
+          "problem": "В поле опыта указано 0 лет, а в тексте требуется не менее 3 лет.",
+          "recommendation": "Уточните, какой стаж обязателен, и приведите поле опыта и текст к одному значению."
+        }
+      ]
+    },
+    {
+      "id": "c0fbb59c-445b-5f68-8469-68f83adb4a8a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c0fbb59c-445b-5f68-8469-68f83adb4a8a",
+      "issues": []
+    },
+    {
+      "id": "5396ca39-e914-5ec8-a442-d40b43715bee",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/5396ca39-e914-5ec8-a442-d40b43715bee",
+      "issues": []
+    },
+    {
+      "id": "64de1396-9633-5195-95c9-97e15cfc1da6",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/64de1396-9633-5195-95c9-97e15cfc1da6",
+      "issues": []
+    },
+    {
+      "id": "3915fc26-a4d0-5217-ba01-626f9303e669",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3915fc26-a4d0-5217-ba01-626f9303e669",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-2",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "field_2": "duty",
+          "quote_2": "2/2 по 12 часов",
+          "problem": "В поле указан полный рабочий день, а в тексте — сменный график 2/2 с ночными сменами.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или текст."
+        }
+      ]
+    },
+    {
+      "id": "a8b77cfb-9169-50ad-b431-bba93696e1be",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/a8b77cfb-9169-50ad-b431-bba93696e1be",
+      "issues": []
+    },
+    {
+      "id": "c6fa09b1-ea9e-5e99-99d3-b5abdce73a19",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c6fa09b1-ea9e-5e99-99d3-b5abdce73a19",
+      "issues": []
+    },
+    {
+      "id": "006fd1af-ec34-58eb-ba19-9ad39b65d92d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/006fd1af-ec34-58eb-ba19-9ad39b65d92d",
+      "issues": []
+    },
+    {
+      "id": "b78907e5-fd77-52ba-b4a3-6b2940a20abd",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/b78907e5-fd77-52ba-b4a3-6b2940a20abd",
+      "issues": []
+    },
+    {
+      "id": "249863cf-57ae-506b-90aa-7aa4251800fb",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/249863cf-57ae-506b-90aa-7aa4251800fb",
+      "issues": []
+    },
+    {
+      "id": "22e3be22-2008-55ec-b078-bf8e6f173037",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/22e3be22-2008-55ec-b078-bf8e6f173037",
+      "issues": []
+    },
+    {
+      "id": "81172a0c-4a46-5900-a6f8-c43854518ab8",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/81172a0c-4a46-5900-a6f8-c43854518ab8",
+      "issues": []
+    },
+    {
+      "id": "0a66910a-eaaa-5a94-bc01-a65bdef14755",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/0a66910a-eaaa-5a94-bc01-a65bdef14755",
+      "issues": []
+    },
+    {
+      "id": "6b51267d-3cc1-5878-9b7f-97bde2a51f59",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6b51267d-3cc1-5878-9b7f-97bde2a51f59",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-4",
+          "field": "salary_min",
+          "quote": "20000",
+          "problem": "Диапазон от 20 000 до 150 000 не позволяет понять реальный уровень оплаты.",
+          "recommendation": "Уточните оклад и от чего зависит переменная часть."
+        }
+      ]
+    },
+    {
+      "id": "527606b4-b0b4-5923-af7d-f668024abb1c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/527606b4-b0b4-5923-af7d-f668024abb1c",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "rule": "LOC-6",
+          "field": "requirement.qualification",
+          "quote": "Формат и адрес рабочего места уточняются при собеседовании",
+          "problem": "Адрес и формат рабочего места не названы, сведения отложены до собеседования.",
+          "recommendation": "Уточните адрес рабочего места и формат работы."
+        }
+      ]
+    },
+    {
+      "id": "5af6ba66-db9f-5aff-b93d-73a9cb0cd50c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/5af6ba66-db9f-5aff-b93d-73a9cb0cd50c",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-4",
+          "field": "duty",
+          "quote": "График 5/2",
+          "field_2": "duty",
+          "quote_2": "графику 2/2",
+          "problem": "В тексте указаны два разных графика: 5/2 с 9:00 до 18:00 и 2/2 с 8:00 до 20:00.",
+          "recommendation": "Уточните, какой из графиков действует для этой должности."
+        }
+      ]
+    },
+    {
+      "id": "d9606abd-3f02-5979-890a-507f506e81d6",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d9606abd-3f02-5979-890a-507f506e81d6",
+      "issues": []
+    },
+    {
+      "id": "d917e02b-ddb3-572d-b633-701098f490ab",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d917e02b-ddb3-572d-b633-701098f490ab",
+      "issues": []
+    },
+    {
+      "id": "70e97240-5a9d-57d1-b073-1c7dfc1e346d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/70e97240-5a9d-57d1-b073-1c7dfc1e346d",
+      "issues": []
+    },
+    {
+      "id": "4e75d2bc-8ca5-51d6-97de-413a4b06038f",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/4e75d2bc-8ca5-51d6-97de-413a4b06038f",
+      "issues": []
+    },
+    {
+      "id": "eae7a638-c9c1-53ef-a50f-deadf4a0e78c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/eae7a638-c9c1-53ef-a50f-deadf4a0e78c",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "rule": "PAY-2",
+          "field": "salary_min",
+          "quote": "30000",
+          "field_2": "salary_max",
+          "quote_2": "от 80 000 рублей",
+          "problem": "В полях указана зарплата 30 000–35 000, а в тексте — от 80 000 рублей.",
+          "recommendation": "Уточните фактический размер оплаты и исправьте поля или текст."
+        }
+      ]
+    },
+    {
+      "id": "a137f84a-d89e-5262-88de-ea4a506e1d91",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/a137f84a-d89e-5262-88de-ea4a506e1d91",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "rule": "LOC-7",
+          "field": "addresses.address",
+          "quote": "пос. Головкино, ул. Учебная, д. 3",
+          "problem": "Указано несколько адресов в разных населённых пунктах, основное место работы не названо.",
+          "recommendation": "Уточните основное место работы и как часто нужно бывать по другим адресам."
+        }
+      ]
+    },
+    {
+      "id": "07ebb143-1911-5e5f-a444-4ca59cce3c22",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/07ebb143-1911-5e5f-a444-4ca59cce3c22",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-3",
+          "field": "requirement.education",
+          "quote": "Tребования не предъявляются",
+          "field_2": "requirements",
+          "quote_2": "Высшее юридическое или кадровое образование обязательно",
+          "problem": "В поле образования стоит «Требования не предъявляются», а в тексте высшее образование обязательно.",
+          "recommendation": "Уточните требуемый уровень образования и исправьте поле или текст."
+        }
+      ]
+    },
+    {
+      "id": "a193245d-236e-524d-a2d2-e000aa6f0f52",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/a193245d-236e-524d-a2d2-e000aa6f0f52",
+      "issues": []
+    },
+    {
+      "id": "1069c8a3-53b0-5e46-9bf2-c53035f7be80",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/1069c8a3-53b0-5e46-9bf2-c53035f7be80",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-2",
+          "field": "duty",
+          "quote": "Мы — динамично развивающаяся компания, лидер рынка региона",
+          "problem": "В описании только сведения о компании и льготах, задачи работника не названы.",
+          "recommendation": "Попросите перечислить, что именно делает оператор склада."
+        }
+      ]
+    },
+    {
+      "id": "77220389-e525-5b73-b867-73f1edc11646",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/77220389-e525-5b73-b867-73f1edc11646",
+      "issues": [
+        {
+          "topic": "title",
+          "type": "contradiction",
+          "rule": "TTL-2",
+          "field": "job-name",
+          "quote": "Бухгалтер",
+          "field_2": "duty",
+          "quote_2": "Уборка прилегающей территории",
+          "problem": "Должность называется «Бухгалтер», а обязанности относятся к уборке территории.",
+          "recommendation": "Уточните, на какую должность открыта вакансия, и приведите название и обязанности в соответствие."
+        }
+      ]
+    },
+    {
+      "id": "6828bc27-61ff-5d1a-9b1d-c74b1d46f6ef",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6828bc27-61ff-5d1a-9b1d-c74b1d46f6ef",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-1",
+          "field": "salary",
+          "quote": "по результатам собеседования",
+          "problem": "Размер оплаты не указан ни в полях, ни в тексте.",
+          "recommendation": "Уточните оклад или диапазон заработной платы и из чего она складывается."
+        }
+      ]
+    },
+    {
+      "id": "9efb06f1-54f6-5285-bab4-5a36dab7376c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9efb06f1-54f6-5285-bab4-5a36dab7376c",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "missing",
+          "rule": "DUT-3",
+          "field": "duty",
+          "quote": "",
+          "problem": "Обязанности не описаны: поле не содержит текста, навыки не заполнены.",
+          "recommendation": "Попросите перечислить основные задачи работника."
+        }
+      ]
+    },
+    {
+      "id": "ce5974ad-31e4-54da-ba3d-21dd8f21a871",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/ce5974ad-31e4-54da-ba3d-21dd8f21a871",
+      "issues": [
+        {
+          "topic": "title",
+          "type": "ambiguity",
+          "rule": "TTL-3",
+          "field": "job-name",
+          "quote": "Повар, кассир, уборщик",
+          "problem": "В названии три разные должности, а обязанности описаны только для повара.",
+          "recommendation": "Уточните, одна это должность с совмещением или три отдельные вакансии."
+        }
+      ]
+    },
+    {
+      "id": "332bac2c-cf4d-5ab5-9546-47a9386480fa",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/332bac2c-cf4d-5ab5-9546-47a9386480fa",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-4",
+          "field": "salary_min",
+          "quote": "55350",
+          "problem": "Диапазон от 55 350 до 169 608 не позволяет понять реальный уровень оплаты.",
+          "recommendation": "Уточните оклад и от чего зависит остальная часть: категория, нагрузка, дежурства."
+        }
+      ]
+    },
+    {
+      "id": "e0f9bf78-d8dd-50bc-a499-5c35bf02476e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e0f9bf78-d8dd-50bc-a499-5c35bf02476e",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-7",
+          "field": "requirements",
+          "quote": "водительское удостоверение не требуется",
+          "field_2": "requirement.qualification",
+          "quote_2": "водительского удостоверения категории B обязательно",
+          "problem": "Водительское удостоверение в одном месте не требуется, в другом обязательно.",
+          "recommendation": "Уточните, обязательно ли водительское удостоверение, и оставьте одно значение."
+        }
+      ]
+    },
+    {
+      "id": "e9ef8a39-1040-5a78-a60a-8a8c76d8000b",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e9ef8a39-1040-5a78-a60a-8a8c76d8000b",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-2",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "field_2": "duty",
+          "quote_2": "сменный 1/3",
+          "problem": "В поле указан полный рабочий день, а в тексте — сменный график 1/3 с ночной работой.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или текст."
+        }
+      ]
+    },
+    {
+      "id": "45f2b26a-12e2-5570-b88a-142b1bebb082",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/45f2b26a-12e2-5570-b88a-142b1bebb082",
+      "issues": []
+    },
+    {
+      "id": "824b827a-6e78-59d1-ae22-4315bd037367",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/824b827a-6e78-59d1-ae22-4315bd037367",
+      "issues": []
+    },
+    {
+      "id": "71b7eefe-9b35-57dc-be60-94ec79f0af32",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/71b7eefe-9b35-57dc-be60-94ec79f0af32",
+      "issues": []
+    },
+    {
+      "id": "75482619-1521-5a34-90b5-478f365fbbf5",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/75482619-1521-5a34-90b5-478f365fbbf5",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Неполный рабочий день/неполная рабочая неделя",
+          "problem": "Указан неполный рабочий день, но нет количества часов и дней работы.",
+          "recommendation": "Уточните количество рабочих часов в день или неделю и дни работы."
+        }
+      ]
+    },
+    {
+      "id": "cc1b7213-fb9e-5ef1-8a90-ef9f3f0e6834",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/cc1b7213-fb9e-5ef1-8a90-ef9f3f0e6834",
+      "issues": []
+    },
+    {
+      "id": "6b82b2cc-139e-5ed7-8dbe-02b87b251025",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6b82b2cc-139e-5ed7-8dbe-02b87b251025",
+      "issues": []
+    },
+    {
+      "id": "16cce5f2-85be-5e0e-bcf9-d7c66702ebd0",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/16cce5f2-85be-5e0e-bcf9-d7c66702ebd0",
+      "issues": []
+    },
+    {
+      "id": "411dc257-a57c-5bba-889b-5957c46e5f7a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/411dc257-a57c-5bba-889b-5957c46e5f7a",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "rule": "LOC-5",
+          "field": "duty",
+          "quote": "Работа полностью дистанционная из любого города",
+          "field_2": "requirement.qualification",
+          "quote_2": "Обязательное ежедневное присутствие в офисе",
+          "problem": "В одном месте работа названа дистанционной, в другом требуется ежедневное присутствие в офисе.",
+          "recommendation": "Уточните формат работы: дистанционно, на месте или совмещение."
+        }
+      ]
+    },
+    {
+      "id": "589e237c-24e6-570e-947e-4694bfba0e81",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/589e237c-24e6-570e-947e-4694bfba0e81",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-3",
+          "field": "requirement.education",
+          "quote": "Высшее образование — бакалавриат",
+          "field_2": "requirements",
+          "quote_2": "Среднее профессиональное образование",
+          "problem": "В поле образования указан бакалавриат, а в тексте достаточно среднего профессионального.",
+          "recommendation": "Уточните минимально необходимый уровень образования и исправьте поле или текст."
+        }
+      ]
+    },
+    {
+      "id": "e6905736-9630-5ec1-83b2-17dd57ceee22",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e6905736-9630-5ec1-83b2-17dd57ceee22",
+      "issues": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "rule": "EMP-1",
+          "field": "employment",
+          "quote": "Полная занятость",
+          "field_2": "schedule",
+          "quote_2": "Подработка на 2–3 часа в день",
+          "problem": "В полях указаны полная занятость и полный рабочий день, а в тексте — подработка на 2–3 часа в день.",
+          "recommendation": "Уточните, полная это занятость или частичная, и сколько часов в день нужно работать."
+        }
+      ]
+    },
+    {
+      "id": "38484fff-49a1-57d4-ba75-60b4caea2f03",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/38484fff-49a1-57d4-ba75-60b4caea2f03",
+      "issues": []
+    },
+    {
+      "id": "b34bc4fa-8106-5561-8bf3-0630a0b00f70",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/b34bc4fa-8106-5561-8bf3-0630a0b00f70",
+      "issues": []
+    },
+    {
+      "id": "13f9ac2d-fbd4-509c-88ae-3204e5d1ad4b",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/13f9ac2d-fbd4-509c-88ae-3204e5d1ad4b",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "rule": "PAY-3",
+          "field": "salary_min",
+          "quote": "90000",
+          "field_2": "salary_max",
+          "quote_2": "40000",
+          "problem": "Минимальная зарплата (90 000) больше максимальной (40 000).",
+          "recommendation": "Уточните нижнюю и верхнюю границы оплаты."
+        }
+      ]
+    },
+    {
+      "id": "135b595a-a1a2-5f73-b8b0-7d37a3363309",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/135b595a-a1a2-5f73-b8b0-7d37a3363309",
+      "issues": []
+    },
+    {
+      "id": "0254d709-5745-56db-bfba-20f80ac06202",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/0254d709-5745-56db-bfba-20f80ac06202",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-4",
+          "field": "qualification",
+          "quote": "Без опыта",
+          "field_2": "requirement.experience",
+          "quote_2": "3",
+          "problem": "В поле квалификации указано «Без опыта», а в поле опыта — 3 года.",
+          "recommendation": "Уточните, обязателен ли стаж, и исправьте то значение, которое неверно."
+        }
+      ]
+    },
+    {
+      "id": "c73e9a85-ac29-590c-9ed1-c8c2d54cf6e9",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c73e9a85-ac29-590c-9ed1-c8c2d54cf6e9",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-3",
+          "field": "shift",
+          "quote": "Только дневная смена",
+          "field_2": "duty",
+          "quote_2": "в ночную смену",
+          "problem": "В поле смен указана только дневная смена, а в тексте — ночная с 20:00 до 8:00.",
+          "recommendation": "Уточните, в какие смены предстоит работать."
+        }
+      ]
+    },
+    {
+      "id": "6beea84d-415d-558a-97e9-901dc80cdb66",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6beea84d-415d-558a-97e9-901dc80cdb66",
+      "issues": []
+    },
+    {
+      "id": "569ee8ea-803a-5cd3-b365-921f9d36dc36",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/569ee8ea-803a-5cd3-b365-921f9d36dc36",
+      "issues": []
+    },
+    {
+      "id": "3b8d660f-a0cb-556c-aab0-0bb9372aec0d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3b8d660f-a0cb-556c-aab0-0bb9372aec0d",
+      "issues": []
+    },
+    {
+      "id": "e53cb623-7d28-5e04-a7fb-47caa8809a64",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e53cb623-7d28-5e04-a7fb-47caa8809a64",
+      "issues": []
+    },
+    {
+      "id": "e9beb1bd-86c3-5750-85e4-c8be5763f16e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e9beb1bd-86c3-5750-85e4-c8be5763f16e",
+      "issues": []
+    },
+    {
+      "id": "140c88f1-ed46-587c-a0fa-aa38b2f891ec",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/140c88f1-ed46-587c-a0fa-aa38b2f891ec",
+      "issues": []
+    },
+    {
+      "id": "5ce74055-b44c-5aab-baf2-73d6fb22fe2b",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/5ce74055-b44c-5aab-baf2-73d6fb22fe2b",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "ambiguity",
+          "rule": "LOC-1",
+          "field": "addresses.address",
+          "quote": "Калининградская область",
+          "problem": "Место работы указано только как регион, без населённого пункта.",
+          "recommendation": "Уточните населённый пункт и адрес, где предстоит работать."
+        }
+      ]
+    },
+    {
+      "id": "7ab7ffc8-6056-5415-b654-c4f24667c767",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/7ab7ffc8-6056-5415-b654-c4f24667c767",
+      "issues": []
+    },
+    {
+      "id": "705a2f37-f6f5-51f2-9818-1c9f89cb96c1",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/705a2f37-f6f5-51f2-9818-1c9f89cb96c1",
+      "issues": []
+    },
+    {
+      "id": "77703a11-a0e1-5bc3-9a1e-cd4dd218cfcf",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/77703a11-a0e1-5bc3-9a1e-cd4dd218cfcf",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Сменная работа",
+          "problem": "Указана сменная работа, но нет длительности смен и их чередования.",
+          "recommendation": "Уточните длительность смены, чередование рабочих и выходных дней и наличие ночных смен."
+        }
+      ]
+    },
+    {
+      "id": "74ae2c86-1445-5626-86c4-b39f7721ce7d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/74ae2c86-1445-5626-86c4-b39f7721ce7d",
+      "issues": []
+    },
+    {
+      "id": "7ac80afe-a80b-5200-a952-f17927657e36",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/7ac80afe-a80b-5200-a952-f17927657e36",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-1",
+          "field": "salary_min",
+          "quote": "Средний доход руб. в месяц",
+          "problem": "Размер оплаты не указан: поля нулевые, а в тексте вместо суммы пропуск.",
+          "recommendation": "Уточните средний доход или оклад в рублях за месяц."
+        }
+      ]
+    },
+    {
+      "id": "e7a6cbb3-26a6-5ffd-b068-e2bfd70cf8bc",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e7a6cbb3-26a6-5ffd-b068-e2bfd70cf8bc",
+      "issues": []
+    },
+    {
+      "id": "89605da4-5967-52cb-9c53-f235a5902fb7",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/89605da4-5967-52cb-9c53-f235a5902fb7",
+      "issues": []
+    },
+    {
+      "id": "723e5bb5-a744-501b-8909-7a514c45cb76",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/723e5bb5-a744-501b-8909-7a514c45cb76",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "rule": "PAY-2",
+          "field": "salary_min",
+          "quote": "45000",
+          "field_2": "duty",
+          "quote_2": "Заработная плата 50 000 рублей",
+          "problem": "В полях указана зарплата 45 000, а в тексте — 50 000 рублей.",
+          "recommendation": "Уточните фактический размер оплаты и исправьте поля или текст."
+        }
+      ]
+    },
+    {
+      "id": "112a58f5-1083-5ba1-acf7-263640e92ec7",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/112a58f5-1083-5ba1-acf7-263640e92ec7",
+      "issues": []
+    },
+    {
+      "id": "9837979d-d0af-5076-b21f-5d1d3980f02d",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9837979d-d0af-5076-b21f-5d1d3980f02d",
+      "issues": []
+    },
+    {
+      "id": "39d5bc70-2ec6-5669-9379-92ad5edcb8f2",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/39d5bc70-2ec6-5669-9379-92ad5edcb8f2",
+      "issues": []
+    },
+    {
+      "id": "765c1b3f-4d00-5a89-a7f7-478652780b54",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/765c1b3f-4d00-5a89-a7f7-478652780b54",
+      "issues": []
+    },
+    {
+      "id": "8b1e6893-2b67-54ca-9032-0c2c976e1b52",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8b1e6893-2b67-54ca-9032-0c2c976e1b52",
+      "issues": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "rule": "EMP-1",
+          "field": "employment",
+          "quote": "Дистанционная (удаленная) работа",
+          "field_2": "duty",
+          "quote_2": "Работа в офисе, присутствие на рабочем месте обязательно",
+          "problem": "В поле занятости указана дистанционная работа, а в тексте — обязательное присутствие в офисе.",
+          "recommendation": "Уточните, работа дистанционная или в офисе."
+        }
+      ]
+    },
+    {
+      "id": "8d094f6d-32cd-5a3e-bd9e-a41bc31428ca",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8d094f6d-32cd-5a3e-bd9e-a41bc31428ca",
+      "issues": []
+    },
+    {
+      "id": "1b6d6518-13dc-5cce-ab50-25323a504783",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/1b6d6518-13dc-5cce-ab50-25323a504783",
+      "issues": []
+    },
+    {
+      "id": "8257a70a-98e6-59de-b4c0-0482873eb8be",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8257a70a-98e6-59de-b4c0-0482873eb8be",
+      "issues": []
+    },
+    {
+      "id": "b0aa814d-1e2b-57b7-aff2-d558f905dd35",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/b0aa814d-1e2b-57b7-aff2-d558f905dd35",
+      "issues": []
+    },
+    {
+      "id": "89c1d12c-5403-5a4e-b106-1e4100c8f065",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/89c1d12c-5403-5a4e-b106-1e4100c8f065",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-2",
+          "field": "requirement.experience",
+          "quote": "3",
+          "field_2": "requirements",
+          "quote_2": "не менее полугода",
+          "problem": "В поле опыта указано 3 года, а в тексте — не менее полугода.",
+          "recommendation": "Уточните минимальный стаж и приведите поле опыта и текст к одному значению."
+        }
+      ]
+    },
+    {
+      "id": "3d146e47-0ff3-5395-9f4e-9fb61bcf67c5",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3d146e47-0ff3-5395-9f4e-9fb61bcf67c5",
+      "issues": []
+    },
+    {
+      "id": "ac700a1e-3e30-55c5-99f9-4ed754fd5ad1",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/ac700a1e-3e30-55c5-99f9-4ed754fd5ad1",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-4",
+          "field": "duty",
+          "quote": "Выполнение поручений руководителя",
+          "problem": "Обязанности описаны только как поручения руководителя, конкретные задачи не названы.",
+          "recommendation": "Попросите перечислить типовые задачи: работа с документами, звонки, организация встреч и т. п."
+        }
+      ]
+    },
+    {
+      "id": "4dcd07fd-4b97-5f26-8b72-4468752c5981",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/4dcd07fd-4b97-5f26-8b72-4468752c5981",
+      "issues": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "rule": "EMP-1",
+          "field": "employment",
+          "quote": "Полная занятость",
+          "field_2": "schedule",
+          "quote_2": "Неполный рабочий день/неполная рабочая неделя",
+          "problem": "Занятость указана как полная, а график — неполный рабочий день; количество часов не указано.",
+          "recommendation": "Уточните размер ставки, количество рабочих часов в неделю и дни работы."
+        }
+      ]
+    },
+    {
+      "id": "d42ae089-f416-5133-9ed1-e09c1ea5d9ad",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d42ae089-f416-5133-9ed1-e09c1ea5d9ad",
+      "issues": []
+    },
+    {
+      "id": "32bcd057-1aa8-5e34-9fbe-29d81df48fd8",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/32bcd057-1aa8-5e34-9fbe-29d81df48fd8",
+      "issues": []
+    },
+    {
+      "id": "e0e15d98-8beb-5341-bb8e-9166bb302a74",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e0e15d98-8beb-5341-bb8e-9166bb302a74",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "contradiction",
+          "rule": "PAY-2",
+          "field": "salary_min",
+          "quote": "30000",
+          "field_2": "salary_max",
+          "quote_2": "от 80 000 рублей",
+          "problem": "В полях указана зарплата 30 000, а в тексте — от 80 000 рублей.",
+          "recommendation": "Уточните фактический размер оплаты и исправьте поля или текст."
+        },
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Режим гибкого рабочего времени",
+          "problem": "Указан гибкий график, но нигде нет дней и часов работы.",
+          "recommendation": "Уточните рабочие дни, длительность рабочего дня и границы начала и окончания работы."
+        }
+      ]
+    },
+    {
+      "id": "867a6d48-f971-56d6-ba5b-ee7468f5266c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/867a6d48-f971-56d6-ba5b-ee7468f5266c",
+      "issues": []
+    },
+    {
+      "id": "ebd05728-b3d5-55ec-a602-d5cce38880a3",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/ebd05728-b3d5-55ec-a602-d5cce38880a3",
+      "issues": []
+    },
+    {
+      "id": "dba50787-0bba-59f0-9415-b36a003aaf7a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/dba50787-0bba-59f0-9415-b36a003aaf7a",
+      "issues": []
+    },
+    {
+      "id": "7a8af410-fbcc-57c4-8065-59ab792e9e41",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/7a8af410-fbcc-57c4-8065-59ab792e9e41",
+      "issues": [
+        {
+          "topic": "title",
+          "type": "contradiction",
+          "rule": "TTL-2",
+          "field": "job-name",
+          "quote": "Учитель английского языка",
+          "field_2": "duty",
+          "quote_2": "уроков химии",
+          "problem": "Должность — учитель английского языка, а обязанности описывают преподавание химии.",
+          "recommendation": "Уточните, какой предмет предстоит преподавать, и приведите название и обязанности в соответствие."
+        }
+      ]
+    },
+    {
+      "id": "dd321f65-0d00-58b5-b19c-e84dbde34258",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/dd321f65-0d00-58b5-b19c-e84dbde34258",
+      "issues": []
+    },
+    {
+      "id": "1515b77c-adf6-529a-b0ed-ef0913b6169f",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/1515b77c-adf6-529a-b0ed-ef0913b6169f",
+      "issues": []
+    },
+    {
+      "id": "c344e06a-b731-5446-80f5-9f9a636a8a33",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/c344e06a-b731-5446-80f5-9f9a636a8a33",
+      "issues": [
+        {
+          "topic": "requirements",
+          "type": "contradiction",
+          "rule": "REQ-2",
+          "field": "requirement.experience",
+          "quote": "3",
+          "field_2": "requirements",
+          "quote_2": "Можно без опыта",
+          "problem": "В поле опыта указано 3 года, а в тексте сказано, что опыт не нужен.",
+          "recommendation": "Уточните, обязателен ли стаж, и исправьте то значение, которое неверно."
+        }
+      ]
+    },
+    {
+      "id": "2fc49f72-ae65-55d2-b6af-cfceb8ae406c",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/2fc49f72-ae65-55d2-b6af-cfceb8ae406c",
+      "issues": []
+    },
+    {
+      "id": "a4820abd-3bd9-540a-b4db-1003775c24bb",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/a4820abd-3bd9-540a-b4db-1003775c24bb",
+      "issues": []
+    },
+    {
+      "id": "60253e53-0835-5657-ba87-6c3dfe237f0a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/60253e53-0835-5657-ba87-6c3dfe237f0a",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Вахтовый метод",
+          "problem": "Указан вахтовый метод, но нет длительности вахты и отдыха, часов работы.",
+          "recommendation": "Уточните длительность вахты и межвахтового отдыха, продолжительность смены."
+        }
+      ]
+    },
+    {
+      "id": "d6d35419-8ab3-517e-b395-770af75d9ff6",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d6d35419-8ab3-517e-b395-770af75d9ff6",
+      "issues": []
+    },
+    {
+      "id": "9c941dfa-b545-598c-ab3c-8ed4e1dd839e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9c941dfa-b545-598c-ab3c-8ed4e1dd839e",
+      "issues": []
+    },
+    {
+      "id": "72c02319-aad7-5881-ae54-3bea33cb1bde",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/72c02319-aad7-5881-ae54-3bea33cb1bde",
+      "issues": []
+    },
+    {
+      "id": "3b366b19-3ebb-5e16-827b-064f29c58940",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/3b366b19-3ebb-5e16-827b-064f29c58940",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-1",
+          "field": "duty",
+          "quote": "Согласно должностной инструкции",
+          "problem": "Обязанности не описаны, есть только ссылка на должностную инструкцию.",
+          "recommendation": "Попросите перечислить основные виды работ и оборудование, которое предстоит обслуживать."
+        }
+      ]
+    },
+    {
+      "id": "6617bc9d-3666-5795-bb1b-8f63c4ea4449",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6617bc9d-3666-5795-bb1b-8f63c4ea4449",
+      "issues": [
+        {
+          "topic": "duties",
+          "type": "ambiguity",
+          "rule": "DUT-1",
+          "field": "duty",
+          "quote": "Работа поваром",
+          "problem": "Обязанности повторяют название должности и не называют ни одной задачи.",
+          "recommendation": "Попросите указать, какие блюда и для кого готовит повар и за что он отвечает."
+        }
+      ]
+    },
+    {
+      "id": "9fa5d9d6-6012-5dd9-a69b-f0c9ee972f0e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9fa5d9d6-6012-5dd9-a69b-f0c9ee972f0e",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-8",
+          "field": "schedule",
+          "quote": "Пятидневная рабочая неделя, 08:00–17:00, обед 30 минут",
+          "problem": "Часы в день дают 42,5 ч в неделю, а заявлено 36 ч.",
+          "recommendation": "Уточните время начала и окончания работы и продолжительность недели."
+        }
+      ]
+    },
+    {
+      "id": "6e0d95fe-6c04-5fba-9abd-37eb6d9d73f1",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6e0d95fe-6c04-5fba-9abd-37eb6d9d73f1",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "rule": "LOC-2",
+          "field": "addresses.address",
+          "quote": "г Калининград",
+          "field_2": "duty",
+          "quote_2": "в г. Советске",
+          "problem": "В поле адреса указан Калининград, а в тексте место работы — Советск.",
+          "recommendation": "Уточните фактическое место работы и исправьте адрес или текст."
+        }
+      ]
+    },
+    {
+      "id": "8cfdc9cc-835b-519a-8255-c5b34cda6416",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/8cfdc9cc-835b-519a-8255-c5b34cda6416",
+      "issues": []
+    },
+    {
+      "id": "f5c52cc3-9350-5d00-8379-fc253180c4ec",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/f5c52cc3-9350-5d00-8379-fc253180c4ec",
+      "issues": [
+        {
+          "topic": "location",
+          "type": "contradiction",
+          "rule": "TTL-4",
+          "field": "addresses.address",
+          "quote": "г Калининград",
+          "field_2": "job-name",
+          "quote_2": "пос. Ершово",
+          "problem": "В названии указан посёлок Ершово, а в поле адреса — Калининград.",
+          "recommendation": "Уточните фактическое место работы и исправьте адрес или название."
+        }
+      ]
+    },
+    {
+      "id": "d56d0a30-b044-5c0c-94cf-4f413b08c46a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/d56d0a30-b044-5c0c-94cf-4f413b08c46a",
+      "issues": []
+    },
+    {
+      "id": "14468379-5682-513d-8f8d-9d822f8c07c2",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/14468379-5682-513d-8f8d-9d822f8c07c2",
+      "issues": []
+    },
+    {
+      "id": "9c4cfd26-334a-5521-8ddd-69dc736d060a",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/9c4cfd26-334a-5521-8ddd-69dc736d060a",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "contradiction",
+          "rule": "SCH-2",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "field_2": "duty",
+          "quote_2": "сутки через двое",
+          "problem": "В поле указан полный рабочий день, а в тексте — дежурства сутки через двое.",
+          "recommendation": "Уточните фактический режим работы и исправьте поле графика или текст."
+        }
+      ]
+    },
+    {
+      "id": "6679bcb9-8cd6-540c-bde6-0adf0536bae4",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/6679bcb9-8cd6-540c-bde6-0adf0536bae4",
+      "issues": [
+        {
+          "topic": "schedule",
+          "type": "ambiguity",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Неполный рабочий день/неполная рабочая неделя",
+          "problem": "Указан неполный рабочий день, но нет ни количества часов, ни размера ставки.",
+          "recommendation": "Уточните количество рабочих часов в день или неделю и размер ставки."
+        }
+      ]
+    },
+    {
+      "id": "aec2f706-4dee-56f3-a5f2-998f78c3a0e5",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/aec2f706-4dee-56f3-a5f2-998f78c3a0e5",
+      "issues": []
+    },
+    {
+      "id": "e6ac355a-0b2b-537a-a301-454256cb972e",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/e6ac355a-0b2b-537a-a301-454256cb972e",
+      "issues": [
+        {
+          "topic": "salary",
+          "type": "ambiguity",
+          "rule": "PAY-5",
+          "field": "salary_min",
+          "quote": "2500",
+          "problem": "Сумма указана за смену, заработок за месяц из вакансии понять нельзя.",
+          "recommendation": "Уточните количество смен в месяц и заработок за месяц."
+        }
+      ]
+    },
+    {
+      "id": "bb6e8150-68b2-5e2c-84fa-4050aa4fbab2",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/bb6e8150-68b2-5e2c-84fa-4050aa4fbab2",
+      "issues": []
+    },
+    {
+      "id": "dddb3a9a-c18d-5892-acf9-ffd856cca237",
+      "url": "https://trudvsem.ru/vacancy/card/0000000000000/dddb3a9a-c18d-5892-acf9-ffd856cca237",
+      "issues": [
+        {
+          "topic": "employment",
+          "type": "contradiction",
+          "rule": "EMP-1",
+          "field": "employment",
+          "quote": "Частичная занятость",
+          "field_2": "schedule",
+          "quote_2": "Полный рабочий день",
+          "problem": "Занятость указана как частичная, а график — полный рабочий день и 40-часовая неделя.",
+          "recommendation": "Уточните, полная это занятость или частичная."
+        }
+      ]
+    }
+  ]
+}

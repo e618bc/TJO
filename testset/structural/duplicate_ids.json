@@ -1,0 +1,148 @@
+{
+  "status": "200",
+  "request": {
+    "api": "v1"
+  },
+  "meta": {
+    "total": 2,
+    "limit": 100
+  },
+  "results": {
+    "vacancies": [
+      {
+        "vacancy": {
+          "id": "796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+          "source": "Вакансия работодателя",
+          "region": {
+            "region_code": "3900000000000",
+            "name": "Калининградская область"
+          },
+          "company": {
+            "companycode": "0000000000000",
+            "email": "kadry@example.org",
+            "hr-agency": false,
+            "inn": "0000000000",
+            "kpp": "000000000",
+            "name": "МКУ \"Учебный центр обслуживания населения\"",
+            "ogrn": "0000000000000",
+            "url": "https://trudvsem.ru/company/0000000000000"
+          },
+          "creation-date": "2026-11-02",
+          "date_modify": "2026-11-22T09:00:00+0300",
+          "salary": "от 37000",
+          "salary_min": 37000,
+          "salary_max": 37000,
+          "job-name": "Социальный работник",
+          "vac_url": "https://trudvsem.ru/vacancy/card/0000000000000/796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+          "employment": "Полная занятость",
+          "schedule": "Режим гибкого рабочего времени",
+          "requirements": "Среднее профессиональное образование по профилю работы, опыт работы от 1 года.",
+          "duty": "Посещение подопечных на дому, покупка продуктов и лекарств, помощь в оплате услуг, ведение отчётности.",
+          "category": {
+            "specialisation": "Государственная служба, некоммерческие организации"
+          },
+          "requirement": {
+            "education": "Среднее профессиональное образование",
+            "experience": 1
+          },
+          "addresses": {
+            "address": [
+              {
+                "location": "Калининградская область, г Калининград, Учебная улица, дом: 1;",
+                "lng": "20.5",
+                "lat": "54.7"
+              }
+            ]
+          },
+          "social_protected": "",
+          "contact_list": [
+            {
+              "contact_type": "Телефон",
+              "contact_value": "+7(000) 000-00-00"
+            }
+          ],
+          "contact_person": "Специалист по кадрам",
+          "work_places": 1,
+          "skills": [],
+          "workPlaceType": {
+            "workPlaceForeign": false,
+            "workPlaceOrdinary": true,
+            "workPlaceQuota": false,
+            "workPlaceSpecial": false
+          },
+          "shift": [],
+          "trainingDays": 0,
+          "currency": "«руб.»",
+          "scheduleTypeComment": "понедельник–пятница, начало с 8:00 до 10:00, 8-часовой рабочий день"
+        }
+      },
+      {
+        "vacancy": {
+          "id": "796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+          "source": "Вакансия работодателя",
+          "region": {
+            "region_code": "3900000000000",
+            "name": "Калининградская область"
+          },
+          "company": {
+            "companycode": "0000000000000",
+            "email": "kadry@example.org",
+            "hr-agency": false,
+            "inn": "0000000000",
+            "kpp": "000000000",
+            "name": "МКУ \"Учебный центр обслуживания населения\"",
+            "ogrn": "0000000000000",
+            "url": "https://trudvsem.ru/company/0000000000000"
+          },
+          "creation-date": "2026-11-02",
+          "date_modify": "2026-11-20T10:00:00+0300",
+          "salary": "от 37000",
+          "salary_min": 37000,
+          "salary_max": 37000,
+          "job-name": "Социальный работник",
+          "vac_url": "https://trudvsem.ru/vacancy/card/0000000000000/796b8639-5af8-5520-8ebb-8b064cc1c3f6",
+          "employment": "Полная занятость",
+          "schedule": "Режим гибкого рабочего времени",
+          "requirements": "Среднее профессиональное образование по профилю работы, опыт работы от 1 года.",
+          "duty": "Посещение подопечных на дому, покупка продуктов и лекарств, помощь в оплате услуг, ведение отчётности.",
+          "category": {
+            "specialisation": "Государственная служба, некоммерческие организации"
+          },
+          "requirement": {
+            "education": "Среднее профессиональное образование",
+            "experience": 1
+          },
+          "addresses": {
+            "address": [
+              {
+                "location": "Калининградская область, г Калининград, Учебная улица, дом: 1;",
+                "lng": "20.5",
+                "lat": "54.7"
+              }
+            ]
+          },
+          "social_protected": "",
+          "contact_list": [
+            {
+              "contact_type": "Телефон",
+              "contact_value": "+7(000) 000-00-00"
+            }
+          ],
+          "contact_person": "Специалист по кадрам",
+          "work_places": 1,
+          "skills": [],
+          "workPlaceType": {
+            "workPlaceForeign": false,
+            "workPlaceOrdinary": true,
+            "workPlaceQuota": false,
+            "workPlaceSpecial": false
+          },
+          "shift": [],
+          "trainingDays": 0,
+          "currency": "«руб.»",
+          "scheduleTypeComment": "Без уточнения"
+        }
+      }
+    ]
+  }
+}

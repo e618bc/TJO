@@ -1,0 +1,19 @@
+[project]
+name = "vacancy-clarity"
+version = "1.0.0"
+description = "Прозрачная вакансия: отчёт о понятности условий работы в вакансиях портала «Работа в России»"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+vacancy-clarity = "vacancy_clarity.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools]
+packages = ["vacancy_clarity", "vacancy_clarity.ai"]

@@ -1,0 +1,2 @@
+# Рабочий режим каждые 6 часов вместо команды schedule. Путь замените на свой.
+0 */6 * * * cd /opt/vacancy-clarity && /usr/bin/python3 -m vacancy_clarity run >> data/run.log 2>&1

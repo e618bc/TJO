@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "generated_at": "2026-11-24T21:16:49+02:00",
+    "tool": "vacancy_clarity 1.0.0",
+    "source": {
+      "mode": "file",
+      "path": "examples/kantkod_sample_vacancies.json"
+    },
+    "vacancies_received": 10,
+    "vacancies_in_report": 10,
+    "skipped": [],
+    "with_issues": 5,
+    "issues_total": 10,
+    "ai": {
+      "status": "ok",
+      "question_bank": "2026-11-24.1",
+      "engines": [
+        {
+          "engine": "cloudflare",
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "calls": 0,
+          "cache_hits": 10,
+          "failures": 0,
+          "disabled": ""
+        }
+      ],
+      "vacancies_answered": 10,
+      "vacancies_failed": 0
+    },
+    "duration_seconds": 0.0
+  },
+  "vacancies": [
+    {
+      "id": "DEMO-39-001",
+      "url": "",
+      "job_name": "Специалист по документообороту",
+      "issues": [],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "spo",
+          "exp_text": "notreq"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-002",
+      "url": "",
+      "job_name": "Помощник администратора",
+      "issues": [
+        {
+          "topic": "duties",
+          "topic_title": "Обязанности",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "DUT-4",
+          "field": "duty",
+          "quote": "Выполнение различных поручений руководителя.",
+          "problem": "Обязанности описаны только как поручения руководителя, конкретные задачи не названы.",
+          "recommendation": "Попросите перечислить типовые задачи работника.",
+          "evidence": {
+            "duties": "boss"
+          }
+        },
+        {
+          "topic": "salary",
+          "topic_title": "Оплата",
+          "type": "missing",
+          "type_title": "Пропуск",
+          "rule": "PAY-1",
+          "field": "salary_min",
+          "quote": "",
+          "problem": "Размер оплаты не указан ни в полях, ни в тексте.",
+          "recommendation": "Уточните оклад или диапазон заработной платы за месяц.",
+          "evidence": {
+            "pay_named": "no"
+          }
+        },
+        {
+          "topic": "schedule",
+          "topic_title": "График работы",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Гибкий график",
+          "problem": "Указан режим «Гибкий график», но нигде нет дней и часов работы.",
+          "recommendation": "Уточните рабочие дни, время начала и окончания работы.",
+          "evidence": {
+            "days_named": "no",
+            "hours_named": "no"
+          }
+        }
+      ],
+      "hints": [
+        {
+          "topic": "location",
+          "topic_title": "Место работы",
+          "rule": "LOC-3",
+          "field": "addresses.address",
+          "quote": "г. Калининград",
+          "note": "В адресе назван только населённый пункт.",
+          "question": "Можно уточнить улицу и дом или название объекта."
+        }
+      ],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "boss",
+          "title_kind": "prof",
+          "title_match": "vague",
+          "edu_text": "none",
+          "pay_named": "no",
+          "days_named": "no",
+          "hours_named": "no",
+          "volume_text": "part"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-003",
+      "url": "",
+      "job_name": "Младший аналитик данных",
+      "issues": [
+        {
+          "topic": "requirements",
+          "topic_title": "Требования",
+          "type": "contradiction",
+          "type_title": "Противоречие",
+          "rule": "REQ-2",
+          "field": "requirement.experience",
+          "quote": "0",
+          "field_2": "requirement.qualification",
+          "quote_2": "Требуется не менее 5 лет опыта работы аналитиком данных.",
+          "problem": "В поле опыта указано 0 лет, а в тексте: «Требуется не менее 5 лет опыта работы аналитиком данных».",
+          "recommendation": "Уточните, какой опыт работы обязателен, и приведите поле опыта и текст к одному значению.",
+          "evidence": {
+            "exp_text": "y3plus"
+          }
+        }
+      ],
+      "hints": [
+        {
+          "topic": "schedule",
+          "topic_title": "График работы",
+          "rule": "SCH-6",
+          "field": "schedule",
+          "quote": "Полный рабочий день",
+          "note": "Часы работы не названы.",
+          "question": "Можно уточнить время начала и окончания работы."
+        },
+        {
+          "topic": "location",
+          "topic_title": "Место работы",
+          "rule": "LOC-3",
+          "field": "addresses.address",
+          "quote": "г. Черняховск",
+          "note": "В адресе назван только населённый пункт.",
+          "question": "Можно уточнить улицу и дом или название объекта."
+        }
+      ],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "exp_text": "y3plus"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-004",
+      "url": "",
+      "job_name": "Оператор контактного центра",
+      "issues": [
+        {
+          "topic": "location",
+          "topic_title": "Место работы",
+          "type": "contradiction",
+          "type_title": "Противоречие",
+          "rule": "LOC-5",
+          "field": "duty",
+          "quote": "Работа полностью дистанционная из любого города.",
+          "field_2": "requirement.qualification",
+          "quote_2": "Обязательное ежедневное присутствие в офисе в Калининграде к 09:00.",
+          "problem": "В одном месте вакансии работа названа дистанционной, в другом требуется присутствие на месте.",
+          "recommendation": "Уточните формат работы: дистанционно, на месте или совмещение, и по каким правилам.",
+          "evidence": {
+            "format": "conflict"
+          }
+        }
+      ],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "none",
+          "format": "conflict"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-005",
+      "url": "",
+      "job_name": "Библиотекарь",
+      "issues": [],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "spo"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-006",
+      "url": "",
+      "job_name": "Специалист",
+      "issues": [
+        {
+          "topic": "duties",
+          "topic_title": "Обязанности",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "DUT-1",
+          "field": "duty",
+          "quote": "Работа с документами и другие задачи по необходимости.",
+          "problem": "Обязанности описаны общими словами, конкретные задачи не названы.",
+          "recommendation": "Попросите перечислить конкретные задачи: что нужно делать и с чем работать.",
+          "evidence": {
+            "duties": "general"
+          }
+        },
+        {
+          "topic": "title",
+          "topic_title": "Название должности",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "TTL-1",
+          "field": "job-name",
+          "quote": "Специалист",
+          "problem": "По названию нельзя понять, какая работа предлагается, а обязанности его не раскрывают.",
+          "recommendation": "Уточните у работодателя наименование должности или профессии с направлением работы.",
+          "evidence": {
+            "title_kind": "generic",
+            "duties": "general"
+          }
+        },
+        {
+          "topic": "schedule",
+          "topic_title": "График работы",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "SCH-1",
+          "field": "schedule",
+          "quote": "Сменный график",
+          "problem": "Указан режим «Сменный график», но нигде нет дней и часов работы.",
+          "recommendation": "Уточните длительность смены и время её начала, чередование рабочих и выходных дней, наличие ночных смен.",
+          "evidence": {
+            "days_named": "no",
+            "hours_named": "no"
+          }
+        },
+        {
+          "topic": "location",
+          "topic_title": "Место работы",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "LOC-1",
+          "field": "addresses.address",
+          "quote": "Калининградская область",
+          "problem": "Место работы указано без населённого пункта.",
+          "recommendation": "Уточните населённый пункт и адрес, где предстоит работать.",
+          "evidence": {
+            "place_named": "no"
+          }
+        }
+      ],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "general",
+          "title_kind": "generic",
+          "title_match": "vague",
+          "edu_text": "none",
+          "exp_text": "wish",
+          "days_named": "no",
+          "hours_named": "no",
+          "place_named": "no",
+          "ref_1": "all"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-007",
+      "url": "",
+      "job_name": "Инженер технической поддержки",
+      "issues": [],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-008",
+      "url": "",
+      "job_name": "Координатор проектов",
+      "issues": [],
+      "hints": [
+        {
+          "topic": "schedule",
+          "topic_title": "График работы",
+          "rule": "SCH-5",
+          "field": "requirement.qualification",
+          "quote": "Пятидневная рабочая неделя с 09:00 до 18:00.",
+          "note": "Сведения о графике в разных местах вакансии расходятся.",
+          "question": "Можно уточнить, какой режим работы действует и по каким правилам."
+        }
+      ],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "none",
+          "days_named": "yes",
+          "hours_named": "yes",
+          "sch_consistency": "conflict"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-009",
+      "url": "",
+      "job_name": "Оператор ввода данных",
+      "issues": [],
+      "hints": [],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "train"
+        }
+      }
+    },
+    {
+      "id": "DEMO-39-010",
+      "url": "",
+      "job_name": "Методист образовательных программ",
+      "issues": [
+        {
+          "topic": "location",
+          "topic_title": "Место работы",
+          "type": "ambiguity",
+          "type_title": "Неоднозначность",
+          "rule": "LOC-6",
+          "field": "requirement.qualification",
+          "quote": "Формат и адрес рабочего места уточняются при собеседовании.",
+          "problem": "Адрес или формат рабочего места не названы: сведения отложены до собеседования.",
+          "recommendation": "Уточните адрес рабочего места и формат работы (на месте, дистанционно, разъезды).",
+          "evidence": {
+            "ref_1": "place"
+          }
+        }
+      ],
+      "hints": [
+        {
+          "topic": "requirements",
+          "topic_title": "Требования",
+          "rule": "REQ-2",
+          "field": "requirements",
+          "quote": "Опыт разработки учебных материалов и навыки работы с офисными программами.",
+          "note": "В поле опыта указано 0, а в тексте опыт назван без срока.",
+          "question": "Можно уточнить, обязателен ли опыт работы и какой."
+        }
+      ],
+      "ai": {
+        "status": "ok",
+        "engine": "cloudflare",
+        "answers": {
+          "duties": "concrete",
+          "title_kind": "prof",
+          "title_match": "same",
+          "edu_text": "none",
+          "exp_text": "req_nodur",
+          "ref_1": "place"
+        }
+      }
+    }
+  ]
+}
