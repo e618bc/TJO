@@ -140,7 +140,7 @@ python3 testset/build_testset.py
 
 ## Видео
 
-…
+https://disk.360.yandex.ru/i/oNWd-AR2yc-43w
 
 ## Участники
 
